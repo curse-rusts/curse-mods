@@ -1,0 +1,55 @@
+id = "blockscope"
+kind = "native-mod"
+name = "Blockscope"
+summary = "The block under your crosshair: its name, id, distance and icon, plus hardness, states and a container's slots."
+description = """
+A Jade-style tooltip for Horizon: the block under your crosshair, in a small box you can place where you
+want.
+
+- Its name in your language, its block id and its distance, with its icon.
+- Its hardness and the tool it wants, and whether what you hold harvests it.
+- Its state properties, a crop's growth, and a container's slots laid out as its own screen has them.
+- Its coordinates on request, and a creature's name and health when you look at one.
+
+Nothing shows when you look at no block within reach, while a screen is open, or with the HUD hidden (F1). Ten
+switches on its settings page (Options > Mods > Blockscope > Settings) choose what the box shows."""
+authors = ["Domanffe"]
+owners = ["Domanffe"]
+owner_ids = [94391234]
+license = "MIT"
+source = "https://github.com/Domanffe/blockscope"
+icon = "icons/blockscope.png"
+categories = ["utility"]
+tags = ["tooltip", "hud", "block-info", "waila"]
+
+[[versions]]
+version = "0.3.1"
+published = "2026-11-02"
+game = "26.3"
+file = "blockscope-0.3.1.hnmod"
+sha256 = "4fea94e5337aa82df3d981fc6231fecc80161262add577b596bb6661e0e303d1"
+changelog = "Rebuilt on the 2026-11-01 Nightly (Horizon `4aa6854`). All five hook points are named now — `mods`, `settings`, `settings_click`, `hud`, `tick` — so the bundle still applies when the game moves them."
+
+[[versions]]
+version = "0.3.0"
+published = "2026-10-30"
+game = "26.3"
+file = "blockscope-0.3.0.hnmod"
+sha256 = "ba4a1c887ab26a2a9189c671cbdbea3ce2ed212a6e3d32f1fffaa60386198358"
+changelog = "Native: the WebAssembly mod rewritten as a mixin bundle for the launcher's native mods, with hardness and the tool's icon, block states, crop growth, a container's slots and a creature's health, each on its own switch. Its settings carry over from 0.2.0."
+
+[[versions]]
+version = "0.2.0"
+published = "2026-10-29"
+game = "26.3"
+file = "blockscope-0.2.0.hmod"
+sha256 = "dcb8a3d3eefe37ebc7fd1886412dc9799c5fa4dee88fd419e7f46a712df00c12"
+changelog = "Reach, placement, background, coordinates and the item icon on its own settings page (Options > Mods > Blockscope), kept between games."
+
+[[versions]]
+version = "0.1.0"
+published = "2026-10-27"
+game = "26.3"
+file = "blockscope-0.1.0.hmod"
+sha256 = "8c9de32150bc845c6e1d1d28a28d6f1746cea8c124aa7e683acdd597c1b49325"
+changelog = "First release: the block under the crosshair, its name, id and distance, in a box beside the crosshair."

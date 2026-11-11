@@ -1,0 +1,81 @@
+id = "eatinganimation"
+kind = "native-mod"
+name = "Eating Animation"
+summary = "While you eat food, or drink a potion or milk, the item in your hand shows its bitten frames."
+description = """
+**Port of Eating Animation for Horizon.** Based on [Eating Animation](https://github.com/Theoness1/EatingAnimation) by Theoness1.
+
+## What it does
+
+While you eat food, or drink a potion or milk, the item in your hand shows its bitten frames as you go.
+
+The frames are built into the mod. No resource pack is needed: the textures and models are compiled into the native
+build as a content mod (`mixins/eatinganimation/data/eatinganimation-content.hmod`), and loaded with the game's resources.
+
+To rebuild that content from a frame pack (for example a new version of the Eating Animation textures):
+
+```sh
+python3 tools/pack_to_content.py <frame pack (zip or folder)> mixins/eatinganimation/data/eatinganimation-content.hmod
+```
+
+The frame pack can be the one `tools/make_frame_pack.py` makes from the original EatingAnimation download.
+
+## Credits
+
+- Eating Animation by [Theoness1](https://github.com/Theoness1/EatingAnimation).
+
+## License
+
+MIT. See LICENSE."""
+authors = ["sillysoufi"]
+owners = ["soufied"]
+owner_ids = [47915535]
+license = "MIT"
+source = "https://github.com/soufied/EatingAnimation-Horizon"
+icon = "icons/eatinganimation.png"
+categories = ["food", "decoration"]
+tags = ["eating", "animation", "food", "port"]
+key = "RWT6eNq4e5WfVDA2lzOOi6XCm/+jJgilqT1+HUUM33ie5MCjcRfSg760"
+
+[[versions]]
+version = "0.2.0"
+published = "2026-11-06"
+game = "26.3"
+file = "eatinganimation-0.2.0.hnmod"
+sha256 = "e9df7c923723b3b047e6442529dac057806521d988ab2694c43fdcc3104ecc5f"
+signature = """
+untrusted comment: signature from minisign secret key
+RUT6eNq4e5WfVLuMgDLyO+no+UCH+2Dee9dcb9thqoPq5LmN+EujX07YcV4lt8b8c32zRRKirAz3Y3NAwYUTCIZXmDKkXfBJ+Q8=
+trusted comment: timestamp:1793955778\tfile:eatinganimation-0.2.0.hnmod\thashed
+0bp1WWbSynkXapYDaodH6cDf4MwL46wyPqJ1IEwc0PHvPWhCG4AE2mq9qXespWPDstYWEuM1BRhadKrNk70lAA=="""
+changelog = """
+Build-in texture pack.
+Fix for https://github.com/soufied/EatingAnimation-Horizon/issues/2 | https://github.com/horizon-rust/horizon/pull/10215"""
+
+[[versions]]
+version = "0.1.1"
+published = "2026-10-31"
+game = "26.3"
+file = "eatinganimation-0.1.1.hnmod"
+sha256 = "3b4d7ce3c9791facc862da7727c2c7c71025cd9bb3ee4cbeaf40f48c72bf5cb0"
+signature = """
+untrusted comment: signature from minisign secret key
+RUT6eNq4e5WfVC2NLoRuU8m5JDlH1mh8dNmGbAZUj6bB4grd487xtihz4OLxxJRyO7jzQHrOz6nAPjcZjT/o1RIxebtX+A3tPg8=
+trusted comment: timestamp:1793419092\tfile:eatinganimation-0.1.1.hnmod\thashed
+OeN+0r/c6BVNO4b82/T9jp/Wh9iGpvL/B0enoxWiIB31W+7E2OmKWhceMaIZqc4w3N3gn3D8+sFrDICK55WoDQ=="""
+changelog = """
+dumped to v0.1.1
+added icon"""
+
+[[versions]]
+version = "0.1.0"
+published = "2026-10-30"
+game = "26.3"
+file = "eatinganimation-0.1.0.hnmod"
+sha256 = "07ef4fde3ebbc4f132aab593b12187bce15e1a46689ab40bd3067c685aca85b9"
+signature = """
+untrusted comment: signature from minisign secret key
+RUT6eNq4e5WfVJPSxJOh730W1FMzydyVRO2S58rux9xbEtEU+mDgsqWX65rscWaUH3zqOkLan6quW/u9nEZDgXrNz1n6IHnT5Aw=
+trusted comment: timestamp:1793371727\tfile:eatinganimation-0.1.0.hnmod\thashed
+qCCGAWAc39kDujbX9CsdXu/URjpNybAOxkomTi18GnzJhMLtsbj0ZfVJaVCSxnh0VvznGQvoH9/DEdRAxBAVBg=="""
+changelog = "First release. Eating Animation for Horizon as a native mod: the food, milk and potion in your hand show bitten frames while you eat or drink them."

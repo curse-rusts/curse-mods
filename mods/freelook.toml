@@ -1,0 +1,26 @@
+id = "freelook"
+kind = "native-mod"
+name = "Freelook"
+summary = "Hold a key for a third person camera you can look around in"
+description = """
+Hold **X** (rebindable in Options > Mods) for a third-person view you can look around in, while your
+character keeps walking and facing the way it was. Let go and the camera goes back to what it was.
+
+Scroll while holding the key to move the camera closer or farther, from 1 to 24 blocks (the game's own third person
+is 4). A native mod for Horizon, in the spirit of the Freelook and Perspective mods."""
+authors = ["Krzysix17"]
+owners = ["Krzysix17"]
+owner_ids = [350813197]
+license = "MIT"
+source = "https://github.com/Krzysix17/horizon-freelook"
+icon = "icons/freelook.png"
+categories = ["utility"]
+tags = ["freelook", "perspective", "camera", "third-person"]
+
+[[versions]]
+version = "0.3.1"
+published = "2026-10-31"
+game = "26.3"
+file = "freelook-0.3.1.hnmod"
+sha256 = "9c0c92ce9f0fc8e7bc1bd34349e26d42b32b8abd2c7a09ec710936f9b6ce9aaf"
+changelog = "First release"

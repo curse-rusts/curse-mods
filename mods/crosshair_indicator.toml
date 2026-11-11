@@ -1,0 +1,38 @@
+id = "crosshair_indicator"
+kind = "native-mod"
+name = "Crosshair Indicator"
+summary = "Dynamic target reach awareness: visual feedback on your crosshair when hovering over an entity in attack range."
+description = """
+A port of the Java Crosshair Indicator mod (AmerDz01) for Horizon, as a native mod: your crosshair tells you
+when the mob or player you aim at is within attack reach (3 blocks).
+
+- **Four styles**: corner brackets around the crosshair (the default), a centre dot, diamond pips, or a chevron above
+  it.
+- **Colour themes**: classic white, dynamic (green when your weapon is fully charged, orange while it charges), combat
+  red, pink, diamond cyan and gold.
+- **Cooldown bar**: an optional thin weapon-cooldown bar below the crosshair.
+
+Settings are in Options > Mods > Crosshair Indicator; a key to turn it on or off can be bound there (unbound by
+default)."""
+authors = ["CayMac"]
+owners = ["CayMac97"]
+owner_ids = [197672048]
+license = "MIT"
+source = "https://github.com/CayMac97/crosshair-indicator"
+icon = "icons/crosshair_indicator.png"
+categories = ["utility"]
+tags = ["crosshair", "pvp", "combat", "hud", "port"]
+key = "RWS411U2KXdTN4/y5bQhqBYxNlZvCtSZ5lNy46eeSAcgy0cxSJo2+Sm3"
+
+[[versions]]
+version = "1.0.0"
+published = "2026-10-31"
+game = "26.3"
+file = "crosshair_indicator-1.0.0.hnmod"
+sha256 = "96beba1f7c94fca492b552fb12af0d20047dc1799f0801607841d56b12786226"
+signature = """
+untrusted comment: signature from minisign secret key\r
+RUS411U2KXdTNz67XDjUwaJ8if7+jDk+qXnJLdhtyjh8mk04UuZ2bme/Tzcpi1Od4ppYmvqzfZ+rEAeG2hb9Lytn+J2nFy1u8gc=\r
+trusted comment: timestamp:1793461576\tfile:crosshair_indicator-1.0.0.hnmod\thashed\r
+zF7EJHDjJPwVG+cYcSgvGJv4kjjYRMdMZipUQyABH0DEMIZ2Fe13hb2nbYYRZlNDG1j4kjhgEYQTODFiAlaCBQ=="""
+changelog = "Initial release for 26.3 Horizon."

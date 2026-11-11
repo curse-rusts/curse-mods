@@ -1,0 +1,35 @@
+id = "xtoxray"
+kind = "native-mod"
+name = "X To Xray"
+summary = "Opensource Xraymod"
+description = """
+Press **X** to see ores through the world, as a native mod for Horizon.
+
+While it is on, every block except ores (coal, copper, iron, gold, redstone, lapis, diamond, emerald, their
+deepslate kinds, nether gold and quartz, ancient debris), chests, spawners, water and lava is drawn as air, and what is left shines at full brightness. Press X again to see the world as usual. Rebind the key in
+Options > Mods.
+
+Single player only: it turns itself off as soon as the world is no longer a closed single player world, so it does
+not work on servers or in a world opened to LAN."""
+authors = ["1_st_Cat"]
+owners = ["RealCat1st"]
+owner_ids = [260922535]
+license = "Apache-2.0"
+source = "https://github.com/RealCat1st/XToXrayRust"
+icon = "icons/xtoxray.png"
+categories = ["utility"]
+tags = ["xray", "ores", "mining"]
+key = "RWQVF+EFGGnX6eUNms+cP5AceLvx9b0rFYYXCty7so4MVbJ1SNpi9zNK"
+
+[[versions]]
+version = "2026.29.0"
+published = "2026-10-30"
+game = "26.3"
+file = "xtoxray-2026.29.0.hnmod"
+sha256 = "3446a4a70a2b87ef6e9de00ce8a255aa83c2e44ccd5acc9f14887662ed55f27c"
+signature = """
+untrusted comment: signature from rsign secret key
+RUQVF+EFGGnX6cZkn/iGZ9FUHXC45MU+8uuj7l7eRkZ+bR/x7S8s2U34F7nv/f6jKXdzeLZi3QoSA5g5oXqP99/KlGgd/19ygwY=
+trusted comment: timestamp:1793375231\tfile:xtoxray-2026.29.0.hnmod\tprehashed
+2h6QOc/dnek1KMCGL2jerhCObc9pECmShr0kKYJhEEFz52Hhb4C3vmjc9vuwE3CftUHs+StHkalHQVLVQy8eCg=="""
+changelog = "Release"

@@ -1,0 +1,33 @@
+id = "appleskin_horizon"
+kind = "native-mod"
+name = "AppleSkin"
+summary = "1:1 Minecraft Java parity food value preview & saturation HUD overlay."
+description = """
+A port of AppleSkin for Horizon, as a native mod, drawn to match the Java Edition HUD.
+
+- **Saturation overlay**: a golden border and glow around the drumsticks your saturation covers.
+- **Food value preview**: pulsing preview drumsticks, and a preview of the saturation border, while you hold
+  something you can eat.
+- **On or off** at any time in Options > Mods > AppleSkin."""
+authors = ["CayMac"]
+owners = ["CayMac97"]
+owner_ids = [197672048]
+license = "MIT"
+source = "https://github.com/CayMac97/appleskin"
+icon = "icons/appleskin_horizon.png"
+categories = ["utility", "food"]
+tags = ["hud", "hunger", "saturation", "food", "port"]
+key = "RWS411U2KXdTN4/y5bQhqBYxNlZvCtSZ5lNy46eeSAcgy0cxSJo2+Sm3"
+
+[[versions]]
+version = "1.0.0"
+published = "2026-10-31"
+game = "26.3"
+file = "appleskin_horizon-1.0.0.hnmod"
+sha256 = "38a729f1aad00f6148f29578a2725cb5e7f9aea79a870fcf3cee76f39838c5ff"
+signature = """
+untrusted comment: signature from minisign secret key\r
+RUS411U2KXdTNzxiQEELascXv6v/RXLycX9k/IkVf5ggI7lL2qjyDEVxdDl5nPxbdCJ3epwwHIE6D8ZHw6QGXCFQjRz3I6Z/UA0=\r
+trusted comment: timestamp:1793440355\tfile:appleskin_horizon-1.0.0.hnmod\thashed\r
+6kGj1vQ1DJypzS0iDdvwksQ2FFAB1jBcycZL83OgBgQgUzbQzKRhGtleKwqAuIrRLdpQO93ale4hSMAv1z/EDg=="""
+changelog = "Initial release for Horizon 26.3."

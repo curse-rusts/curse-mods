@@ -1,0 +1,79 @@
+id = "appleskin"
+kind = "native-mod"
+name = "AppleSkin"
+summary = "Shows how much HP, hunger, and saturation will be restored."
+description = """
+A port of [AppleSkin](https://github.com/squeek502/AppleSkin) by squeek502 for Horizon, as a native mod. It
+draws the hunger details AppleSkin shows over the food bar:
+
+- **Saturation**: how much saturation you have, as food icons over the food bar.
+- **Exhaustion**: a thin strip showing how close you are to losing the next food point.
+- **Held food preview**: the food in your hand, with how much food and saturation it would restore.
+- **Animation**: fade in, pulse, or both (the default).
+
+Each part can be turned on or off, and the animation changed, in the mod's settings (Options > Mods > AppleSkin).
+
+Based on AppleSkin by squeek502. See the LICENSE in the source for the original copyright and licence notices."""
+authors = ["sillysoufi"]
+owners = ["soufied"]
+owner_ids = [47915535]
+license = "MIT"
+source = "https://github.com/soufied/AppleSkin-Horizon"
+icon = "icons/appleskin.png"
+categories = ["utility", "food"]
+tags = ["hud", "hunger", "saturation", "food", "port"]
+key = "RWT6eNq4e5WfVDA2lzOOi6XCm/+jJgilqT1+HUUM33ie5MCjcRfSg760"
+
+[[versions]]
+version = "0.1.3"
+published = "2026-11-05"
+game = "26.3"
+file = "appleskin-0.1.3.hnmod"
+sha256 = "2dac91d4c4c4ab65684f41a3279c6b27beffa7407e5362b0d7a97c28c07914a6"
+signature = """
+untrusted comment: signature from minisign secret key
+RUT6eNq4e5WfVGmizdOQdqc3jXpjW/MxBBP/JE8iFYmkrE0cKbEOUP5t11senfkM2hkDW2JLSOEJCfQJT7PMS/LnYbXET1ux0Ag=
+trusted comment: timestamp:1793891067\tfile:appleskin-0.1.3.hnmod\thashed
+r7jcpfe0pAz6c2FZAuAd6EUJojhQ56mGoq/H9hYXyC8rZ6QuwErQt/nEM4ly1VjMIKS7pbn6vCz0wK7jIak+DQ=="""
+changelog = "Fix for https://github.com/horizon-rust/horizon-mods/issues/289"
+
+[[versions]]
+version = "0.1.2"
+published = "2026-11-02"
+game = "26.3"
+file = "appleskin-0.1.2.hnmod"
+sha256 = "627d1e7c4b4fa3dd191a4ff5887fe38b20ceb7d7d7f1197c1e03d1f25b6b6b92"
+signature = """
+untrusted comment: signature from minisign secret key
+RUT6eNq4e5WfVJqiP4tt8vQGW6sVLSxiLXLeVunyGuyfS9aZWqPilg77biu/2B+HUDS1FlBE31F/HOhBR2YWy0GSmdwhUO7xNAs=
+trusted comment: timestamp:1793633868\tfile:appleskin-0.1.2.hnmod\thashed
+IW9M2qJIktmQDlARS6ZTJ1IA9BoGCfMZvatnjIlSpVPkpeG/Qpr5QKRRRPFhnZa93a5KcUG34ok+cgFxipRjBg=="""
+changelog = "animation fix"
+
+[[versions]]
+version = "0.1.1"
+published = "2026-10-31"
+game = "26.3"
+file = "appleskin-0.1.1.hnmod"
+sha256 = "182117d2a9767bc22a7c6652efd24551990cea015193784f20aeb8a7ba35b4ac"
+signature = """
+untrusted comment: signature from minisign secret key
+RUT6eNq4e5WfVPcAN+WeTYujFNeWw6oMKKV7nXxfIfyeqg83qrFNNA/LYfOrmxwV0DgO+tf5Sk5piJjS7hEtyKhl9rs0VpBOfgg=
+trusted comment: timestamp:1793418678\tfile:appleskin-0.1.1.hnmod\thashed
+gK9BQoCtM8sRPSvSiBzAT2IE8nZlCDfUa7tWCG7cG/v7H41E+4DnflE0KtAPdqi/9+MQT3ONmT4qbGFVio58BA=="""
+changelog = """
+dumped to 0.1.1
+added icon"""
+
+[[versions]]
+version = "1.0.0"
+published = "2026-10-30"
+game = "26.3"
+file = "appleskin-1.0.0.hnmod"
+sha256 = "3c25b916f74f47faf40070a8654c546d15cb79ac3947f140e257f4cb041aeb96"
+signature = """
+untrusted comment: signature from minisign secret key
+RUT6eNq4e5WfVEMHvcSGm73mmamWosNGGcdt7Qn05wqgRuAlDj/DyzH66lS2u8nvB43GnZJ7xCmgoM5xArHJuN9kD30iIKj0zws=
+trusted comment: timestamp:1793368049\tfile:appleskin-1.0.0.hnmod\thashed
+gjEf247x8XwHpOI2Ra3ngk6umC/mFZiHOCfZyzxg5IFJ7CNJVpofnw/l7ITtePPeyi4r3+0D6FvmmhtuiqVAAg=="""
+changelog = "First release. AppleSkin for Horizon as a native mod: saturation, exhaustion and the food in your hand, drawn over the food bar."

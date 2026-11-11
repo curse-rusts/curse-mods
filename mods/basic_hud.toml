@@ -1,0 +1,81 @@
+id = "basic_hud"
+kind = "native-mod"
+name = "The Basic HUD"
+summary = "A visual HUD editor with 14 customizable widgets, recent pickups, effect timers, durability, coordinates, FPS and a customizable Tab list."
+description = """
+A client-side visual HUD for Horizon. Move, resize and style fourteen independent widgets directly over the game.
+
+Includes effects and timers, consumable counts, durability, observed totem uses, available player health, item cooldowns, coordinates, FPS, ping, speed, CPS, world clock, mini armour and recent item pickups.
+
+Recent pickups aggregates matching items and refreshes their expiry: 4 torches + 2 torches becomes x6. Five seconds by default, adjustable from 1 to 60 seconds. Includes icon + count mode.
+
+Customize each widget's position, scale, colours, opacity, padding and shadows. Includes a customizable Tab list and ten interface languages. A short tutorial appears on the first settings visit and can be replayed with ?. Reset requires confirmation; leaving with edits offers Save / Discard / Stay.
+
+Controls: Right Shift, or Options > Mods > The Basic HUD > Settings > Edit HUD.
+
+Install the .hnmod through Horizon and choose Performance. Minecraft 26.3; pinned Horizon 68ac6f647e7022b2c696e81863d7cface28c9416. Compatibility with other Nightlies is not claimed.
+
+Client-side only: unknown health stays unknown, unobserved totem uses cannot be counted, and server-plugin-only cooldowns are unavailable. No FPS improvement is claimed.
+
+Release notes and verification: https://github.com/repositorykreml1n/the-basic-hud/releases/tag/v0.5.0"""
+authors = ["repositorykreml1n"]
+owners = ["repositorykreml1n"]
+owner_ids = [271232376]
+license = "MIT"
+source = "https://github.com/repositorykreml1n/the-basic-hud"
+icon = "icons/basic_hud.png"
+categories = ["utility"]
+tags = ["hud", "hud-editor", "widgets", "coordinates", "fps", "status-effects", "durability", "tab-list"]
+
+[[versions]]
+version = "0.5.0"
+published = "2026-11-04"
+game = "26.3"
+file = "basic_hud-0.5.0.hnmod"
+sha256 = "97011cc7374354c6293678c7ab593240d0512bffde1d7b642dad521e1df3f8ac"
+changelog = """
+## 0.5.0 — Recent pickups
+- New movable widget for recently collected items: pick up 4 torches, then 2 more before expiry, and it shows x6. Each repeat pickup refreshes that item's timer.
+- Default display time: 5 seconds; adjustable from 1 to 60 seconds.
+- Supports icon + count mode, dragging, scale, colours and opacity.
+- Partial pickups count only the amount that fits. Giving, crafting and inventory rearrangement do not by themselves create entries.
+- New pixel-art totem icon; new labels translated into all ten interface languages. Existing layouts and settings are preserved.
+
+Verified: 75 strict Rust test executions, warning-free pinned native build, real in-game aggregation/expiry/partial-pickup checks, editor persistence and ordinary startup without a controller.
+
+Русский: добавлен блок недавнего подбора с суммированием количества, обновлением таймера и настройкой 1–60 секунд (по умолчанию 5). Новая иконка — тотем.
+Deutsch: Neues Widget für aufgehobene Gegenstände mit addierten Mengen und einstellbarer Dauer von 1–60 Sekunden.
+Français : nouveau widget des objets ramassés, quantités cumulées et durée réglable de 1 à 60 secondes.
+Español: nuevo widget de objetos recogidos, cantidades acumuladas y duración ajustable de 1 a 60 segundos."""
+
+[[versions]]
+version = "0.4.1"
+published = "2026-11-03"
+game = "26.3"
+file = "basic_hud-0.4.1.hnmod"
+sha256 = "36431d3a2d810e2aefbd8611767a80f9184e3df032e4cc2b9b9fd9398f794560"
+changelog = """
+Major update from 0.1.0 to 0.4.1.
+
+- Visual in-game editor: drag, individual scale, colours, opacity, shadows, padding and snap.
+- 13 widgets, including FPS, coordinates, available player health and actual item cooldowns.
+- Icons + values: ×16, 1:45 and durability without long labels.
+- Mini armour beside the hotbar, including elytra.
+- Custom Tab list: numeric ping, bars, player counts, sorting and scale.
+- Smoothed optional speed; single-player ping labelled Local.
+- Ten UI languages plus Auto; first-visit tutorial, replay through ?.
+- Reset confirmation; Save / Discard changes / Stay on leaving with edits; failed-save recovery.
+
+Pinned to Minecraft 26.3 / Horizon 68ac6f6. Use the Performance build profile on Windows; Dev can overflow the startup stack on this baseline. No compatibility with other Nightlies or FPS gain is claimed.
+
+Validated: 67 Rust test executions, native build, isolated gameplay/editor tests, restart persistence and ordinary asynchronous startup.
+
+Full notes (English + Russian, Ukrainian, German, French and Spanish summaries): https://github.com/repositorykreml1n/the-basic-hud/blob/main/CHANGELOG.md"""
+
+[[versions]]
+version = "0.1.0"
+published = "2026-11-01"
+game = "26.3"
+file = "basic_hud-0.1.0.hnmod"
+sha256 = "fe2c5d9da681b4f575bff867df70d6e2f61614b0215a206fb7a0c3b0027db994"
+changelog = "First release."

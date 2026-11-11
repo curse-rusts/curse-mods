@@ -1,0 +1,38 @@
+id = "freecam"
+kind = "native-mod"
+name = "Freecam"
+summary = "Freecam mod ported for Horizon"
+description = """
+Control your camera separately from your player: a rewrite for Horizon, as a native mod, of the
+[Freecam](https://github.com/MinecraftFreecam/Freecam) mod by the Freecam authors (MIT; its licence notice is kept in
+the source).
+
+- **F4** (rebindable in Options > Mods) detaches the camera: fly it through walls, at any speed, while your player
+  stays where it was. The movement keys fly it and Left Ctrl speeds it up.
+- **Tripod cameras**: F4 + 1 to 9 opens one of nine saved camera spots, which keeps its place when closed.
+
+**Settings** (Options > Mods > Freecam): default or creative-style flight, horizontal and vertical speed (0.25x to
+8x), where the camera starts, show your player, return on damage, freeze the player, what interaction does while
+detached, and the on-screen notices."""
+authors = ["hakergeniusz"]
+owners = ["hakergeniusz"]
+owner_ids = [117102435]
+license = "MIT"
+source = "https://github.com/hakergeniusz/freecam"
+icon = "icons/freecam.png"
+categories = ["utility"]
+tags = ["freecam", "camera", "spectator", "tripod", "port"]
+key = "RWR4cJC6Jj3EWGi26o29Rs3hAIPWqf8koFdXV4bBLF/Tm84QPfRAYjO5"
+
+[[versions]]
+version = "0.1.0"
+published = "2026-10-31"
+game = "26.3"
+file = "freecam-0.1.0.hnmod"
+sha256 = "6314ed87d3b58ed0244bed388201c64bffb8deab4f5ff7beed2a3791b391a6da"
+signature = """
+untrusted comment: signature from rsign secret key
+RUR4cJC6Jj3EWN7yDLuEFss9Xir36oWeHI3yyIK+PlIffoXzHXcZ4eBAN/UcOwGpniH+lJl9uU1vzg8yRe9i6SKNMFhI6qbHkAQ=
+trusted comment: freecam 0.1.0 for Horizon (Minecraft 26.3), built from github.com/hakergeniusz/freecam commit 78d8f05
+6sfFvM54vZFE+02rwu0EJVbCnv5dJAJ7PDEWp64QnyEjlWYEnzXDzDAyLzKdZAfXwtvX+igaCS2KJKCk5UY5CA=="""
+changelog = "Release."

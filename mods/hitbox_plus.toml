@@ -1,0 +1,36 @@
+id = "hitbox_plus"
+kind = "native-mod"
+name = "Hitbox+"
+summary = "Customizable entity hitboxes with exact weapon & spear in-reach colors, thickness, eye rays, and sprint HUD."
+description = """
+Hitbox+ turns the game's F3+B debug hitboxes into a customizable PvP aid, as a native mod for Horizon.
+
+- **In-reach colour**: a hitbox takes your chosen colour while your crosshair is on it within hitting distance:
+  3 blocks for swords, axes, maces and fists, 4.5 blocks for spears in survival (6.5 in creative).
+- **11 reach colours**, from bright green to a smooth rainbow, and hitbox styles (white, cyan, yellow, red, rainbow).
+- **Three thicknesses**: thin, default or thick lines.
+- **Eye rays**: optional looking-direction lines and eye-level markers.
+- **Sprint HUD**: a sprint indicator in the screen corner you pick.
+
+Press **H** to show or hide hitboxes. Colours, thickness and the HUD's corner are in Options > Mods > Hitbox+."""
+authors = ["taxtii", "itzglecni"]
+owners = ["taxtii"]
+owner_ids = [347672997]
+license = "MIT"
+source = "https://github.com/taxtii/hitbox_plus.git"
+icon = "icons/hitbox_plus.png"
+categories = ["utility"]
+tags = ["hitboxes", "pvp", "reach", "combat", "sprint", "hud"]
+
+[[versions]]
+version = "1.3.0"
+published = "2026-11-03"
+game = "26.3"
+file = "hitbox_plus-1.3.0.hnmod"
+sha256 = "8d1b95e7461e38fc40994b35a82c1f753a58e9751ce27af1dc101a4717dba8a4"
+changelog = """
+- Added dynamic spear attack reach support (4.5 blocks in survival, 6.5 blocks in creative with 0.125 hitbox margin).
+- Standard melee weapons (swords, axes, fists) use exact 3.0-block in-reach detection.
+- Added 11 selectable reach color options (Bright Green, Neon Cyan, Aqua Mint, Gold Yellow, Sunset Orange, Hot Pink, Neon Purple, Electric Blue, Crimson Red, Pure White, Rainbow).
+- Removed red hit flashing when attacking entities.
+- Zero-overhead lock-free atomic rendering with configurable line thickness, eye rays, and always-on toggle sprint HUD."""

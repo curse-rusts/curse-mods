@@ -1,0 +1,6 @@
+# Every change needs a review from one of these before it merges (branch protection:
+# "Require review from Code Owners"). The reviewers are the Horizon Team, GitHub team horizon-rust/horizon-team
+# (Ludovic decides who is in it). /.github/ and takedowns stay Ludovic's.
+*            @ludovic111 @horizon-rust/horizon-team
+/.github/    @ludovic111
+/revoked.toml @ludovic111

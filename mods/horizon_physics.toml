@@ -1,0 +1,57 @@
+id = "horizon_physics"
+kind = "native-mod"
+name = "PhysicsModHorizon"
+summary = "Physics for Horizon, inspired by PhysicsMod: ragdolls, waves, physical particles and capes."
+description = """
+By tariksabanuz
+
+Physics for Horizon, inspired by PhysicsMod by Haubna. It is a clean-room version for Horizon: it contains none of PhysicsMod's code or assets and is not made or endorsed by Haubna. Everything is built as a native Horizon mod, so no other mods or loaders are needed.
+
+Features
+
+- **Realistic water**: waves that never repeat, built from several swells with wave groups, wind gusts, sun glints, foam on the crests and along the shore, and rain rings on the surface. Boats and the camera follow the same waves you see.
+- **Ragdolls**: mobs fall and tumble with their bodies instead of just disappearing.
+- **Physical particles**: block cracks, sprint dust and broken or eaten items become small physical pieces that fall, bounce and settle.
+- **Capes** that move with you.
+- **Quick Setup**: on first launch everything is off, so the game starts fast. A short setup lets you pick how much you want, and then turns it on.
+- **Physics Settings** in Options, with categories, switches and sliders for every effect, so you can tune it to your PC.
+
+Notes
+
+- Built for Horizon Nightly `6475f62`. Other versions may need an updated build.
+- Works with Vulkan and DirectX 12.
+- If the game feels slow, lower the wave height or turn effects off in Physics Settings.
+
+Source code and issues: https://github.com/tariksabanuz/PhysicsModHorizon"""
+authors = ["tariksabanuz"]
+owners = ["tariksabanuz"]
+owner_ids = [332662152]
+license = "MIT"
+source = "https://github.com/tariksabanuz/PhysicsModHorizon"
+icon = "icons/horizon_physics.png"
+categories = ["decoration", "game-mechanics"]
+tags = ["physics", "ragdolls", "water", "waves", "particles", "capes"]
+
+[[versions]]
+version = "0.20.7"
+published = "2026-11-09"
+game = "26.3"
+file = "horizon_physics-0.20.7.hnmod"
+sha256 = "8eeba82ac0e7755298269fd328679473720a9894cfe10df5c8e3aaf88f59c34c"
+changelog = """
+- PVP Server Compatibility no longer switches the effects off in single player (its own integrated server); it only applies on other servers. Rebuilt for the latest Horizon nightly (fdc87ae, Nov 8)."""
+
+[[versions]]
+version = "0.18.0"
+published = "2026-11-04"
+game = "26.3"
+file = "horizon_physics-0.18.0.hnmod"
+sha256 = "213f6264a20bed7fef64f12f539d0b2364f710857a3acaa351b96e78b3239dc1"
+
+[[versions]]
+version = "0.15.1"
+published = "2026-11-03"
+game = "26.3"
+file = "horizon_physics-0.15.1.hnmod"
+sha256 = "d7cf1201f0a47a852aa1a4c9684ef9e658ec3c86852104d44716d05f11281ca3"
+changelog = "First release: block, mob, item, snow, water, smoke, cloth, weather and collapse physics, with a Physics Settings screen."
