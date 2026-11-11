@@ -1,8 +1,8 @@
 blank_issues_enabled: false
 contact_links:
   - name: Submit a project
-    url: https://playhorizon.dev/mods/submit
-    about: Mods, modpacks and resource packs for Horizon. Each submission is reviewed.
-  - name: Horizon itself
-    url: https://github.com/horizon-rust/horizon/issues
-    about: Bugs in the game or the launcher.
+    url: https://github.com/curse-rusts/curse-mods/blob/main/MOD-POLICY.md
+    about: Mods, modpacks and resource packs for Curse. Read what a submission promises, then open a pull request.
+  - name: Curse itself
+    url: https://curse-rusts.github.io/
+    about: The game, the launcher and the server.

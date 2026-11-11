@@ -1,26 +1,26 @@
-# Zoom (Horizon native mod)
+# Zoom (Curse native mod)
 
-Horizon's official Zoom: hold a key (Z by default) to zoom in, and turn the mouse wheel while you hold it to zoom
+Curse's official Zoom: hold a key (Z by default) to zoom in, and turn the mouse wheel while you hold it to zoom
 further in or out. Its settings page (Options > Mods > Zoom > Settings) has the key and three options: the
 starting zoom (2x to 10x), smooth zoom (eased like the spyglass) and slower turning while zoomed.
 
-It is a [horizon-mixins](https://github.com/horizon-rust/horizon-mixins) bundle (`mixins/zoom/`) that the Horizon
+It is a [curse-mixins](https://github.com/curse-rusts/curse-mixins) bundle (`mixins/zoom/`) that the Curse
 launcher builds into the game. It keeps the settings of earlier versions: the same files
 (`horizon-mods/.horizon-mod-data/zoom/level`, `smooth`, `sensitivity`) and the same key line
 (`key.zoom.zoom:…` in `horizon-mods.txt`).
 
 ## Install
 
-In the Horizon launcher: Mods → Zoom → Install, then **Build** on the same page (once built, switch it
+In the Curse launcher: Mods → Zoom → Install, then **Build** on the same page (once built, switch it
 on or off in the game under Options → Mods). The
-launcher downloads its own Rust and builds the game with your native mods; see Horizon's
-[native mods](https://github.com/horizon-rust/horizon/blob/main/docs/native-mods.md).
+launcher downloads its own Rust and builds the game with your native mods; see the
+[mods page](https://curse-rusts.github.io/mods.html).
 
 ## Made on the hook points
 
-The bundle hooks only Horizon's native hook points (`crates/horizon-client/src/game/native_hooks.rs`), which keep
+The bundle hooks only the game's native hook points (`crates/horizon-client/src/game/native_hooks.rs`), which keep
 their names and signatures across releases. `compatibility.json` names the version it needs (`"hooks": 1`), so the
-launcher builds Zoom on any Horizon with that version or a later one, the player's own game by default, together with any other
+launcher builds Zoom on any game with that version or a later one, the player's own game by default, together with any other
 mod. `horizon_revision` is only the commit it was last tested on.
 
 | File | What it is |
@@ -28,14 +28,14 @@ mod. `horizon_revision` is only the commit it was last tested on.
 | `mixins/zoom/horizon-mixin.toml` | The bundle: one module and the HEAD hooks |
 | `mixins/zoom/runtime.rs` | The mod's logic and state, added to the game as `game::official_zoom`; also this crate's library, for its tests |
 | `mixins/zoom/*.rs` | One small helper per hook |
-| `../tools/native.py` | Shared by the native mods: apply on Horizon (from GitHub, by commit), check, build, package the `.hnmod`, run the proof |
+| `../tools/native.py` | Shared by the native mods: apply on the game (from GitHub, by commit), check, build, package the `.hnmod`, run the proof |
 | `proof.py` (with `../tools/game.py`) | The proof: the built game driven with `horizon-ctl --offscreen` on fresh, temporary data |
 
 ## Build and prove
 
 ```sh
 (cd native/zoom && cargo test)                    # the logic
-python3 native/tools/native.py check zoom          # apply on the tested Horizon and cargo check the game
+python3 native/tools/native.py check zoom          # apply on the tested revision and cargo check the game
 python3 native/tools/native.py check zoom --horizon latest  # ... on the newest Nightly
 python3 native/tools/native.py check all           # with the other native mods, as a player's set
 python3 native/tools/native.py package zoom        # native/target/zoom-<version>.hnmod for the registry

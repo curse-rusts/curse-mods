@@ -1,8 +1,8 @@
 # A pull request's checks: what it changes compared with main, each new file's
 # own check (its kind's, its signature, a trial run of a mod in the sandbox), and
 # the index it would publish. Runs with a read-only token and no secrets; the tool
-# comes from Horizon, never from the pull request, and a submission's code only
-# runs inside Horizon's mod sandbox.
+# comes from the game's own source, never from the pull request, and a submission's code only
+# runs inside the game's mod sandbox.
 name: check
 on:
   pull_request:

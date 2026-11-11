@@ -1,60 +1,57 @@
-# Horizon mods
+# Curse mods
 
-The registry of what is made for [Horizon](https://github.com/horizon-rust/horizon): mods (`.hmod`), modpacks (`.hpack`)
-and resource packs, each one reviewed before it is published. Browse them at
-[playhorizon.dev/mods](https://playhorizon.dev/mods) or in the launcher (Mods, then Horizon beside Modrinth).
+The registry of what is made for [Curse](https://curse-rusts.github.io/): mods (`.hmod`), native mods (`.cmod`)
+and resource packs, each one reviewed before it is listed. The entries live here; the files they list are release
+assets of this repository.
 
-Players install from here through the launcher, which checks every file's SHA-256 and, when the author signs, its
-signature before the game sees it. Sandboxed `.hmod` mods run in Horizon's sandbox,
-with no file, network or clock access, and can only do what their page lists.
+The registry is not deployed yet. The game and the launcher have no index address, so nothing is fetched from here
+at runtime and a fresh install plays like vanilla. Mods installed by hand work today: `curse-mods/` for content
+mods, `curse-native-mods/` for native bundles. Browsing and in-game install arrive when the registry has an address,
+not before.
 
-Native source mods (`.hnmod`, kind `native-mod`) are built into an isolated game by
-a launcher with native-mod support. They run with the player’s account permissions.
-Their bundles pin the exact Horizon and Horizon Mixins revisions used for the build.
-Other revisions have not been validated. Registry checks inspect the source bundle and compile it
-on the newest Nightly with the most downloaded native mods (in a job whose token
-can only read) without running it; reviewers must also examine the source and
-pinned-build validation. Publishing these requires the native-mod changes to `cargo-horizon-mod`
-and the launcher to have shipped first.
+**What a file is.** A content mod is data and assets only, with no code, and runs in the game's mod sandbox with no
+file, network or clock access beyond what its page lists. A native mod is Rust that changes the game's own source
+before it is compiled; it runs with the player's account permissions (see the
+[mods page](https://curse-rusts.github.io/mods.html)). Its bundle pins the exact Curse and mixin-engine revisions
+used for the build; other revisions have not been validated, and every version of a native mod is reviewed, owner
+or not.
 
-**Who is responsible.** Except the projects marked Official (made by the Horizon project), everything here is made and
-owned by its own authors, not by the Horizon project or its maintainers. A listing is not an endorsement. See the
-[mod policy](MOD-POLICY.md): what authors promise when they submit (ports of other mods included), the licences
-it accepts, and how to have a project taken down.
+**Who is responsible.** Except the projects marked Official (made by the Curse project), everything here is made
+and owned by its own authors, not by the Curse project or its maintainers. A listing is not an endorsement. See the
+[mod policy](MOD-POLICY.md): what authors promise when they submit (ports of other mods included), the licences it
+accepts, and how to have a project taken down.
 
-## Submit
+## Submitting
 
-Use the form at [playhorizon.dev/mods/submit](https://playhorizon.dev/mods/submit): sign in with GitHub, pick the file
-and fill in the page. The form checks the file, uploads it here and opens a pull request for you. Then:
+A submission is a pull request that adds `mods/<id>.toml` and puts the file in the `staging` prerelease as
+`<sha256>.<extension>`. Then:
 
-1. This repository's checks run on it: the file's own checks, a trial run of a mod in the sandbox, the index it would
-   publish. Their report is in the pull request's checks.
+1. This repository's checks run on it: the file's own checks, a trial run of a mod in the sandbox, and the index it
+   would build. Their report is in the pull request's checks.
 2. A reviewer (see [`.github/CODEOWNERS`](.github/CODEOWNERS)) reads the entry, the source and the report, and asks
    for changes in the pull request if needed.
-3. Merging publishes it: the file becomes a release, the project appears on the site and in the launcher within
-   minutes.
+3. Merging publishes it: the file becomes a release, and the index gains the project.
 
-What the registry takes now: mods, modpacks of registry mods, and resource packs. Shader packs open when Horizon's own
-shader pack format is out (Iris and OptiFine packs are on Modrinth). Before you submit a mod, run what the checks run:
+What the registry takes now: mods, modpacks of registry mods, and resource packs. The checks are the registry
+commands of `cargo curse-mod`, the tool that ships with the game's source:
 
 ```sh
-cargo install --git https://github.com/horizon-rust/horizon cargo-horizon-mod
-cargo horizon-mod check target/horizon-mod/my_mod.hmod
+cargo curse-mod check target/curse-mod/my_mod.hmod
+cargo curse-mod registry build . --files files --out index.json
 ```
 
-**Updates** come the same way: the form adds a version to your entry, and a reviewer reads it before it is
-published. Only an entry's `owners` can add versions, and every version of a native mod is reviewed, owner or
-not: its code runs with the player's account permissions. A published file never changes: publish a new version.
+**Updates** come the same way: the pull request adds a version to the entry, and a reviewer reads it before it is
+published. Only an entry's `owners` can add versions. A published file never changes: publish a new version.
 
-**Signing** is optional and recommended: put your [minisign](https://jedisct1.github.io/minisign/) public key in your
-entry, and every later version must be signed with it, so nobody else can publish an update in your name.
+**Signing** is optional and recommended: put your [minisign](https://jedisct1.github.io/minisign/) public key in
+your entry, and every later version must be signed with it, so nobody else can publish an update in your name.
 
-## Report
+## Reporting
 
-Something wrong with a project? [Report it](../../issues/new?template=report.yml). Your work published without your
-permission? [Ask for a takedown](../../issues/new?template=takedown.yml) ([mod policy](MOD-POLICY.md)). A project that does harm is taken
-down in [`revoked.toml`](revoked.toml): the launcher then refuses it and turns installed copies off, telling players
-why.
+Something wrong with a project? [Report it](../../issues/new?template=report.yml). Your work published without
+your permission? [Ask for a takedown](../../issues/new?template=takedown.yml) ([mod policy](MOD-POLICY.md)). A
+project that does harm is taken down in [`revoked.toml`](revoked.toml): the launcher then refuses it and turns
+installed copies off, telling players why.
 
 ## Layout
 
@@ -64,35 +61,37 @@ why.
 | `icons/<id>.png` | Its icon, at most 256 KiB |
 | `revoked.toml` | Files taken down |
 | `.github/workflows/check.yml` | A pull request's checks |
-| `.github/workflows/publish.yml` | On merge: releases, then `index.json` on Pages |
+| `.github/workflows/publish.yml` | On merge: releases, then `index.json` |
 | `.github/workflows/cleanup.yml` | Weekly: staging files nobody needs any more |
 | `.github/workflows/native-compat.yml` | Native mods on the newest Nightly, as the launcher builds them: a pull request's new version applied and compiled with the most downloaded native mods, its module names against every mod's; daily, every mod's newest version, the ones that don't apply marked `broken_on` in the index (`scripts/native_compat.py`) |
-| `.github/workflows/native.yml` | Horizon's native mods: each changed one's tests, `.hnmod` and game check, all of them together, and weekly on the newest Nightly |
-| `native/<name>/` | Horizon's own native mods (Zoom, FPS Counter, Keystrokes, Minimap, Recipes, Coordinates HUD): the source of their `.hnmod` files |
-| `native/tools/` | Shared by them: apply on Horizon, check, build, package, prove (`native/tools/native.py`) |
+| `.github/workflows/native.yml` | Curse's native mods: each changed one's tests, `.hnmod` and game check, all of them together, and weekly on the newest Nightly |
+| `native/<name>/` | Curse's own native mods (Zoom, FPS Counter, Keystrokes, Minimap, Recipes, Coordinates HUD): the source of their bundles |
+| `native/tools/` | Shared by them: apply on the game, check, build, package, prove (`native/tools/native.py`) |
 | `scripts/` | What the workflows share |
 
-The format of the entries and of `index.json` is
-[docs/api/mod-index.md](https://github.com/horizon-rust/horizon/blob/main/docs/api/mod-index.md) in Horizon's repository;
-the checks are `cargo horizon-mod check` and `cargo horizon-mod registry`, from Horizon at the commit in the
-repository variable `HORIZON_REV` (else `main`).
+The format of the entries and of `index.json` is the game's own `docs/api/mod-index.md`. Entries are read by the
+registry commands of `cargo curse-mod` at the revision in the repository variable `HORIZON_REV` (else `main`); the
+variable keeps its name because the tool it names has not moved.
 
-The index: `https://horizon-rust.github.io/horizon-mods/index.json`.
+## Curse's native mods
 
-## Horizon's native mods
-
-`native/<name>/` holds the source of Horizon's official mods, as
-[horizon-mixins](https://github.com/horizon-rust/horizon-mixins) bundles on Horizon's native hook points
-([docs/native-mods.md](https://github.com/horizon-rust/horizon/blob/main/docs/native-mods.md)). Each folder keeps the
-history of the repository it came from. A mod builds on any Horizon whose hook points are at least the version its
-`compatibility.json` names; `horizon_revision` is the commit it was last tested on. `smp` and `voicechat-server`
-are server mods, built into the official server's engine (see their READMEs).
+`native/<name>/` holds the source of Curse's official mods, as [curse-mixins](https://github.com/curse-rusts/curse-mixins)
+bundles on the game's native hook points. Each folder keeps the history of the repository it came from. A mod
+builds on any game whose hook points are at least the version its `compatibility.json` names; `horizon_revision` is
+the commit it was last tested on. `smp` and `voicechat-server` are server mods, built into the official server's
+engine (see their READMEs).
 
 ```sh
-python3 native/tools/native.py check zoom          # apply on the tested Horizon and cargo check the game
+python3 native/tools/native.py check zoom          # apply on the tested revision and cargo check the game
 python3 native/tools/native.py check all           # every native mod together
 python3 native/tools/native.py package all         # native/target/<id>-<version>.hnmod, for a registry entry
-python3 native/tools/native.py proof zoom --resources /path/to/.local/horizon-client/26.3
 ```
 
-To make your own, start from [horizon-native-mod-template](https://github.com/horizon-rust/horizon-native-mod-template).
+`proof` drives the built game; each mod's README has its command.
+
+The bundles in `native/` still name their manifests `horizon-mixin.toml` and their packages `horizon-native.json`:
+the game reads those names, and older launchers read nothing else. Newer tools also write `curse-mixin.toml` and
+`curse-native.json`, which the registry accepts.
+
+To make your own, start from
+[curse-native-mod-template](https://github.com/curse-rusts/curse-native-mod-template).

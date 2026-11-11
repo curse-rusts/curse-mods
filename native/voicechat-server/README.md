@@ -1,11 +1,11 @@
-# Voice chat server (Horizon native mod)
+# Voice chat server (Curse native mod)
 
-The server half of proximity voice chat on a Horizon dedicated server. Players who have a voice chat client mod
-(azetech's Complex Voice Chat, any client that speaks Simple Voice Chat 2.6.x's protocol over Horizon's mod
+The server half of proximity voice chat on a Curse dedicated server. Players who have a voice chat client mod
+(azetech's Complex Voice Chat, any client that speaks Simple Voice Chat 2.6.x's protocol over the game's mod
 messages) talk to the players near them, or to their group from anywhere. Players without one join and play as on
 any server: the server sends them nothing.
 
-- **The handshake** goes over Horizon's mod messages (`native_net_from_client` / `native_net_send_to_player`, the
+- **The handshake** goes over the game's mod messages (`native_net_from_client` / `native_net_send_to_player`, the
   `horizon:mod_net` channel) on `voicechat:` channel names, the same messages and layouts as Simple Voice Chat 2.6.x
   (compatibility version 20). A client gets a fresh 16-byte secret when it asks; nothing is sent to anyone before.
 - **Voices** go over UDP, through the server, never from player to player: no player learns another's address.
@@ -44,7 +44,7 @@ any server: the server sends them nothing.
 | File | What it is |
 |---|---|
 | `mixins/voicechat_server/horizon-mixin.toml` | The bundle: the relay crate, the glue module and four HEAD hooks (mod messages, server tick, player logged out, world closing) |
-| `mixins/voicechat_server/relay/` | The relay crate (`voicechat_server_relay`): the wire format (`proto.rs`), the handshake, groups and UDP relay (`lib.rs`) and its tests over real UDP sockets (`tests.rs`). Depends on `ring` (AES-GCM) and `serde`, both in Horizon's `Cargo.lock` |
+| `mixins/voicechat_server/relay/` | The relay crate (`voicechat_server_relay`): the wire format (`proto.rs`), the handshake, groups and UDP relay (`lib.rs`) and its tests over real UDP sockets (`tests.rs`). Depends on `ring` (AES-GCM) and `serde`, both in the game's `Cargo.lock` |
 | `mixins/voicechat_server/glue.rs` | Added to the game as `game::voicechat_server`: the config, starting the relay, the players each tick |
 
 It needs horizon-mixins 0.6.0 (bundle crates) and hook points API 57. Tests: `cargo test` here.

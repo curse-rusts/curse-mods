@@ -1,10 +1,10 @@
-# SMP (Horizon native server mod)
+# SMP (Curse native server mod)
 
-The official Horizon server's survival layer ([design](https://github.com/horizon-rust/horizon/blob/main/docs/smp.md)).
-It is **not** part of Horizon's own server: only a server that builds this mod into its engine has it. It isn't listed
+The official Curse server's survival layer ([mods page](https://curse-rusts.github.io/mods.html)).
+It is **not** part of Curse's own server: only a server that builds this mod into its engine has it. It isn't listed
 in the registry.
 
-Players install nothing: it speaks only what a stock Horizon client already shows (commands with completions, chat
+Players install nothing: it speaks only what a stock Curse client already shows (commands with completions, chat
 lines, vanilla chest menus the server fills with ordinary items (the trade menu); later sounds, titles, the action
 bar, boss bars and the sidebar).
 
@@ -266,7 +266,7 @@ or right clicking the claim's item frames, armour stands, paintings, boats, mine
 shears, dyes, buckets, a frame's or a stand's items) does nothing for others (`claims.protected_entities`, entity
 ids; monsters and players aren't in it; villagers and wandering traders still trade; end crystals are always guarded,
 even when a world's list predates them). Not guarded yet, for want of a
-Horizon hook: wind charges bursting outside a claim (they open doors inside), armour stands and vehicles in a blast,
+Game hook: wind charges bursting outside a claim (they open doors inside), armour stands and vehicles in a blast,
 farmland trampled, a wither's or an enderman's own block changes. The server's `spawn-protection` (vanilla's) guards
 the spawn.
 
@@ -308,7 +308,7 @@ and outbid players who are offline find a note when they come back. Everything (
 written in `economy.json` with the balances, in one step: a crash can't keep the money and lose the items, or the
 reverse. A listing carries the whole stack (since 0.31): its enchantments, name, damage, lore, a shulker box's
 or a bundle's contents and every other component, written as the game writes it in player files, and given back
-exactly so (Horizon's `native_give_stack`) to the buyer, the winner, or the seller when it comes back. `/ah sell
+exactly so (the game's `native_give_stack`) to the buyer, the winner, or the seller when it comes back. `/ah sell
 <price> <count>` lists part of the stack in hand; the rest stays in the hand, the same. The menu shows the stack
 itself (its tooltip), with the listing's price, seller and time under it. A stack is taken only if it would come
 back the same (its data written and read back equal); not market charts (free at `/market`), nor a stack holding
@@ -385,7 +385,7 @@ commands say so) rather than start from nothing.
 
 ## Made on the hook points
 
-It hooks only Horizon's native hook points: `native_register_commands` and `native_perform_command` (API 8), the
+It hooks only the game's native hook points: `native_register_commands` and `native_perform_command` (API 8), the
 acting player's items (API 9), the server menus and `native_exchange_items` (API 10), the players' health and
 `native_run_command` (API 21), `native_destroy_block` (API 14), `native_right_click_block`, the acting player and the
 action bar (API 21), `native_block_spread`, `native_piston_move`, `native_explosion_detonate`, `native_fill_bucket` and
@@ -408,13 +408,13 @@ action bar (API 21), `native_block_spread`, `native_piston_move`, `native_explos
 
 ```sh
 (cd native/smp && cargo test)                          # the rules
-python3 native/tools/native.py check smp               # apply on the tested Horizon and cargo check the game
+python3 native/tools/native.py check smp               # apply on the tested revision and cargo check the game
 python3 native/tools/native.py proof smp --resources /path/to/.local/horizon-client/26.3
 ```
 
 ## The official server's engine
 
-The server runs `horizon-server` as usual, with `[engine] path` pointing at a game built with this mod:
+The server runs `curse-server` as usual, with `[engine] path` pointing at a game built with this mod:
 
 ```sh
 NATIVE_NO_DEFAULT_FEATURES=1 python3 native/tools/native.py build smp --horizon <the release's commit>

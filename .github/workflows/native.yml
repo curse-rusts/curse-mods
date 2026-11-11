@@ -1,5 +1,5 @@
-# Horizon's own native mods (native/<name>/): each changed folder's tests and .hnmod, and the game with it applied
-# on the Horizon it was tested on; every mod together, as a player's set. Every Monday, all of them on the newest
+# Curse's own native mods (native/<name>/): each changed folder's tests and .hnmod, and the game with it applied
+# on the game revision it was tested on; every mod together, as a player's set. Every Monday, all of them on the newest
 # Nightly, to catch a change of the hook points early.
 name: native
 on:
@@ -14,7 +14,7 @@ on:
   workflow_dispatch:
     inputs:
       horizon:
-        description: "Horizon commit, tag, or `latest` (the newest Nightly); empty: the mods' tested commit"
+        description: "Game commit, tag, or `latest` (the newest Nightly); empty: the mods' tested commit"
         default: latest
 permissions:
   contents: read
@@ -99,7 +99,7 @@ jobs:
       - uses: actions/checkout@v4
       - run: rustup toolchain install $RUST --profile minimal && rustup default $RUST
       - run: sudo apt-get update && sudo apt-get install -y libasound2-dev libudev-dev pkg-config
-      - name: Apply on Horizon and check the game
+      - name: Apply on the game and check it
         env:
           GITHUB_TOKEN: ${{ github.token }}
           HORIZON: ${{ github.event_name == 'schedule' && 'latest' || inputs.horizon || '' }}
@@ -112,7 +112,7 @@ jobs:
       - uses: actions/checkout@v4
       - run: rustup toolchain install $RUST --profile minimal && rustup default $RUST
       - run: sudo apt-get update && sudo apt-get install -y libasound2-dev libudev-dev pkg-config
-      - name: Every native mod applied together, on Horizon
+      - name: Every native mod applied together, on the game
         env:
           GITHUB_TOKEN: ${{ github.token }}
           HORIZON: ${{ github.event_name == 'schedule' && 'latest' || inputs.horizon || '' }}

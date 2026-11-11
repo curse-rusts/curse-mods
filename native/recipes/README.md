@@ -1,28 +1,28 @@
-# Recipes (Horizon native mod)
+# Recipes (Curse native mod)
 
-Horizon's official recipe viewer: every item beside your inventory, with a search box (`#tag` searches a tag). R over an
+Curse's official recipe viewer: every item beside your inventory, with a search box (`#tag` searches a tag). R over an
 item shows its recipes, one tab per station; U shows its uses. The + under a crafting recipe you know fills the
 crafting grid, as the recipe book does. In creative mode, turn on "Click gives items" (Options > Mods > Recipes >
 Settings): a click on an item in the panel gives you one, a right click a stack. Change R and U on the mod's page in
 Options > Mods.
 
-It is a [horizon-mixins](https://github.com/horizon-rust/horizon-mixins) bundle (`mixins/recipes/`) that the Horizon
+It is a [curse-mixins](https://github.com/curse-rusts/curse-mixins) bundle (`mixins/recipes/`) that the Curse
 launcher builds into the game. It keeps the settings of earlier versions: the same file
 (`horizon-mods/.horizon-mod-data/recipes/give`) and the same keys (`key.recipes.recipe`, `key.recipes.uses` in
 `horizon-mods.txt`).
 
 ## Install
 
-In the Horizon launcher: Mods → Recipes → Install, then **Build** on the same page (once built, switch it
+In the Curse launcher: Mods → Recipes → Install, then **Build** on the same page (once built, switch it
 on or off in the game under Options → Mods). The
-launcher downloads its own Rust and builds the game with your native mods; see Horizon's
-[native mods](https://github.com/horizon-rust/horizon/blob/main/docs/native-mods.md).
+launcher downloads its own Rust and builds the game with your native mods; see the
+[mods page](https://curse-rusts.github.io/mods.html).
 
 ## Made on the hook points
 
-The bundle hooks only Horizon's native hook points (`crates/horizon-client/src/game/native_hooks.rs`), which keep
+The bundle hooks only the game's native hook points (`crates/horizon-client/src/game/native_hooks.rs`), which keep
 their names and signatures across releases. It needs the item panel and the recipe tables, so `compatibility.json`
-names version 2 (`"hooks": 2`): the launcher builds Recipes on any Horizon with that version or a later one, the
+names version 2 (`"hooks": 2`): the launcher builds Recipes on any game with that version or a later one, the
 player's own game by default, together with any other mod. `horizon_revision` is only the commit it was last tested
 on.
 
@@ -38,7 +38,7 @@ on.
 
 ```sh
 (cd native/recipes && cargo test)                    # the viewer
-python3 native/tools/native.py check recipes         # apply on the tested Horizon and cargo check the game
+python3 native/tools/native.py check recipes         # apply on the tested revision and cargo check the game
 python3 native/tools/native.py check all             # with the other native mods, as a player's set
 python3 native/tools/native.py package recipes       # native/target/recipes-<version>.hnmod for the registry
 python3 native/tools/native.py proof recipes --resources /path/to/.local/horizon-client/26.3

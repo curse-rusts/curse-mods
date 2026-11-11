@@ -38,8 +38,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "native" / "tools")
 import native  # noqa: E402  (native/tools/native.py: source, latest_nightly, get, log)
 import native_trace  # noqa: E402
 
-INDEX = "https://horizon-rust.github.io/horizon-mods/index.json"
-REGISTRY = "horizon-rust/horizon-mods"
+INDEX = "https://curse-rusts.github.io/curse-mods/index.json"
+REGISTRY = "curse-rusts/curse-mods"
 MIXINS_GIT = "https://github.com/horizon-rust/horizon-mixins"
 WORK = native.TARGET / "compat"
 

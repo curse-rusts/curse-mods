@@ -17,7 +17,7 @@ on:
   workflow_dispatch:
     inputs:
       horizon:
-        description: "Horizon commit, or `latest` (the newest Nightly)"
+        description: "Game commit, or `latest` (the newest Nightly)"
         default: latest
       upload:
         description: "Publish the result (native-health release); `false` for a trial run"
@@ -28,7 +28,7 @@ concurrency:
   group: native-compat-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true
 env:
-  # The Rust the launcher builds native mods with (Horizon's launcher/src/rust_toolchain.rs).
+  # The Rust the launcher builds native mods with (the launcher's src/rust_toolchain.rs).
   RUST: "1.99.1"
 jobs:
   check:
@@ -84,7 +84,7 @@ jobs:
       - run: python3 -m unittest discover -s scripts -p 'test_*.py'
       - run: rustup toolchain install $RUST --profile minimal && rustup default $RUST
       - run: sudo apt-get update && sudo apt-get install -y libasound2-dev libudev-dev pkg-config
-      # Yesterday's dependencies, checked, and horizon-mixins: only Horizon's own crates and the mods compile again.
+      # Yesterday's dependencies, checked, and horizon-mixins: only the game's own crates and the mods compile again.
       - uses: actions/cache@v4
         with:
           path: |

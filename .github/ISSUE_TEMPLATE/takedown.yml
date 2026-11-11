@@ -7,13 +7,13 @@ body:
     attributes:
       value: |
         Thanks for telling us. A project that uses your work without permission is removed
-        (see [MOD-POLICY.md](https://github.com/horizon-rust/horizon-mods/blob/main/MOD-POLICY.md)).
+        (see [MOD-POLICY.md](https://github.com/curse-rusts/curse-mods/blob/main/MOD-POLICY.md)).
         This issue is public: to write privately instead, use [lu4ovic.com](https://lu4ovic.com/#contact).
   - type: input
     id: project
     attributes:
       label: Project id
-      description: The last part of its page's address, playhorizon.dev/mods/<id>
+      description: The entry's file name, mods/<id>.toml
     validations:
       required: true
   - type: textarea
