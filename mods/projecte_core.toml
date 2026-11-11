@@ -1,11 +1,11 @@
 id = "projecte_core"
 kind = "native-mod"
-name = "ProjectE for Horizon"
+name = "ProjectE for Curse"
 summary = "Unofficial port of ProjectE: EMC, transmutation tables, collectors, condensers, dark and red matter tools and armour."
 description = """
-**This mod has two parts, and you need both.** Install this one, the native part, and [ProjectE for Horizon (assets)](https://playhorizon.dev/mods/projecte), then press Build.
+**This mod has two parts, and you need both.** Install this one, the native part, and [ProjectE for Curse (assets)](https://github.com/curse-rusts/curse-mods/blob/main/mods/projecte.toml), then press Build.
 
-An **unofficial** port of [ProjectE](https://github.com/sinkillerj/ProjectE) to Horizon. It isn't made or supported by the ProjectE team, so please report its bugs here, not to them.
+An **unofficial** port of [ProjectE](https://github.com/sinkillerj/ProjectE) to Curse. It isn't made or supported by the ProjectE team, so please report its bugs here, not to them.
 
 Break items down into EMC and turn that EMC into new items:
 
@@ -40,4 +40,4 @@ published = "2026-11-06"
 game = "26.3"
 file = "projecte_core-0.1.0.hnmod"
 sha256 = "ea0cd9cdb85cb8f3bd9f35a99d7b2c8e4f95ea2c0ba321509be02ee8f4b3df85"
-changelog = "First release. Tested on Horizon Nightly 66f3981 and Horizon Mixins e8cd0aa."
+changelog = "First release. Tested on Curse Nightly 66f3981 and Curse Mixins e8cd0aa."

@@ -3,7 +3,7 @@ kind = "native-mod"
 name = "The Basic HUD"
 summary = "A visual HUD editor with 14 customizable widgets, recent pickups, effect timers, durability, coordinates, FPS and a customizable Tab list."
 description = """
-A client-side visual HUD for Horizon. Move, resize and style fourteen independent widgets directly over the game.
+A client-side visual HUD for Curse. Move, resize and style fourteen independent widgets directly over the game.
 
 Includes effects and timers, consumable counts, durability, observed totem uses, available player health, item cooldowns, coordinates, FPS, ping, speed, CPS, world clock, mini armour and recent item pickups.
 
@@ -13,7 +13,7 @@ Customize each widget's position, scale, colours, opacity, padding and shadows. 
 
 Controls: Right Shift, or Options > Mods > The Basic HUD > Settings > Edit HUD.
 
-Install the .hnmod through Horizon and choose Performance. Minecraft 26.3; pinned Horizon 68ac6f647e7022b2c696e81863d7cface28c9416. Compatibility with other Nightlies is not claimed.
+Install the .hnmod through Curse and choose Performance. Minecraft 26.3; pinned Curse 68ac6f647e7022b2c696e81863d7cface28c9416. Compatibility with other Nightlies is not claimed.
 
 Client-side only: unknown health stays unknown, unobserved totem uses cannot be counted, and server-plugin-only cooldowns are unavailable. No FPS improvement is claimed.
 
@@ -66,7 +66,7 @@ Major update from 0.1.0 to 0.4.1.
 - Ten UI languages plus Auto; first-visit tutorial, replay through ?.
 - Reset confirmation; Save / Discard changes / Stay on leaving with edits; failed-save recovery.
 
-Pinned to Minecraft 26.3 / Horizon 68ac6f6. Use the Performance build profile on Windows; Dev can overflow the startup stack on this baseline. No compatibility with other Nightlies or FPS gain is claimed.
+Pinned to Minecraft 26.3 / Curse 68ac6f6. Use the Performance build profile on Windows; Dev can overflow the startup stack on this baseline. No compatibility with other Nightlies or FPS gain is claimed.
 
 Validated: 67 Rust test executions, native build, isolated gameplay/editor tests, restart persistence and ordinary asynchronous startup.
 

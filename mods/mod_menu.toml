@@ -1,11 +1,11 @@
 id = "mod_menu"
 kind = "native-mod"
 name = "Mod Menu"
-summary = "ModMenu For Horizon"
+summary = "ModMenu For Curse"
 description = """
 A Mods button on the title screen, in the icon row after Accessibility, opening a screen laid out like the
 Java [Mod Menu](https://modrinth.com/mod/modmenu)'s: every mod you have installed, with its icon, name, version and
-description. A clean-room native mod for Horizon, with no Mod Menu code.
+description. A clean-room native mod for Curse, with no Mod Menu code.
 
 - **Search** by name, id or description, and **filter** by all, on, off, native or content mods.
 - **Pick a mod** to see its version, type, description and any problems, turn it on or off, or open its own settings
@@ -28,7 +28,7 @@ game = "26.3"
 file = "mod_menu-0.3.5.hnmod"
 sha256 = "5fef518e6ce7417944ab2621711be013cf7e25fdd6d3b25922876e78f090bfa3"
 changelog = """
-- Source now matches the published file exactly (the Mods button icon is no longer drawn on the Realms button). Rebuilt for the latest Horizon nightly (fdc87ae, Nov 8)."""
+- Source now matches the published file exactly (the Mods button icon is no longer drawn on the Realms button). Rebuilt for the latest Curse nightly (fdc87ae, Nov 8)."""
 
 [[versions]]
 version = "0.3.3"

@@ -12,11 +12,11 @@ Hover a shulker box to see what's inside: its 27 slots appear as a 9 x 3 grid ri
 - Settings in Options > Mods > ShulkerPeek > Settings: show the grid always or only while holding Shift, show a grid for empty boxes, and tint the grid with the box's dye colour.
 - Uses your resource pack's own shulker box texture.
 
-Works in single player and on LAN worlds you host. Horizon currently leaves a box's contents out of what its built-in server sends to the game window, which is why even the "64 x Diamond" lines are missing there. ShulkerPeek sends the contents the way a vanilla server does. On vanilla servers the grid works too; on other Horizon servers without the mod, boxes look empty.
+Works in single player and on LAN worlds you host. Curse currently leaves a box's contents out of what its built-in server sends to the game window, which is why even the "64 x Diamond" lines are missing there. ShulkerPeek sends the contents the way a vanilla server does. On vanilla servers the grid works too; on other Curse servers without the mod, boxes look empty.
 
 It never changes items, inventories or worlds. Turn it off any time in Options > Mods.
 
-This is a native mod built for Horizon Nightly 2026-10-29 (`5e391eb`). It builds together with Horizon's official native mods (FPS Counter, Zoom, Minimap, Recipes and others)."""
+This is a native mod built for Curse Nightly 2026-10-29 (`5e391eb`). It builds together with Curse's official native mods (FPS Counter, Zoom, Minimap, Recipes and others)."""
 authors = ["vstxx"]
 owners = ["vstxx"]
 owner_ids = [106024432]

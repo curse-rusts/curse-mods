@@ -1,9 +1,9 @@
 id = "wisdom_horizon"
 kind = "shader"
-name = "Wisdom Shaders V3 (Horizon port)"
-summary = "bobcao3's Wisdom Shaders V3 ported to Horizon's native shader API."
+name = "Wisdom Shaders V3 (Curse port)"
+summary = "bobcao3's Wisdom Shaders V3 ported to Curse's native shader API."
 description = """
-bobcao3's Wisdom Shaders V3 (Build 3300) ported to Horizon's shader API: its sun, ambient and torch colours, Oren-Nayar and GGX lighting, jittered soft shadows, atmosphere, 2D clouds, fog and AgX tonemap, translated from GLSL to WGSL. Adds bloom, FXAA, mob and chest relighting, held light sources and a horizon haze as Horizon post passes.
+bobcao3's Wisdom Shaders V3 (Build 3300) ported to Curse's shader API: its sun, ambient and torch colours, Oren-Nayar and GGX lighting, jittered soft shadows, atmosphere, 2D clouds, fog and AgX tonemap, translated from GLSL to WGSL. Adds bloom, FXAA, mob and chest relighting, held light sources and a horizon haze as Curse post passes.
 
 Unofficial port by iLoong. A lighter version for more FPS is published as `wisdom_horizon_lite`."""
 authors = ["bobcao3", "iLoong"]
@@ -25,11 +25,11 @@ sha256 = "3c1dc775e3eac9e67ced2e346bf7edd5cb83161b35eca7231ca9aff7725a40b4"
 changelog = """
 - Night: the sky and fog no longer turn black when rain hides the stars, rain streaks stay faint in the dark, and a "Night brightness" option raises the moonlight and night ambient light (3x Wisdom's by default).
 - Rain: lighter fog in the rain ("Rain fog", 0.5 by default; 1 is Wisdom's), the water gets the same fog as the land, and the sun's glint on water fades under rain clouds.
-- Water: its top stays flat (the waves are in the normals, as in Wisdom), and the mirror Horizon draws with vanilla's light is brought to this pack's light.
+- Water: its top stays flat (the waves are in the normals, as in Wisdom), and the mirror Curse draws with vanilla's light is brought to this pack's light.
 - Mobs, items, chests and particles: a post pass relights them to match this pack's light on the terrain in view, eased over time ("Light mobs and chests", with a diagnostic view).
-- Held light sources light the terrain when Horizon's Dynamic lights extra is on.
+- Held light sources light the terrain when Curse's Dynamic lights extra is on.
 - Glowing blocks show their own colour instead of burning out to white at night ("Glowing blocks"), with extra bloom around them ("Glow bloom").
-- The far edge of the loaded terrain blends into the sky ("Horizon haze")."""
+- The far edge of the loaded terrain blends into the sky ("Curse haze")."""
 
 [[versions]]
 version = "1.1.0"
@@ -37,4 +37,4 @@ published = "2026-11-04"
 game = "26.3"
 file = "wisdom_horizon-1.1.0.hshader"
 sha256 = "2b7b4e11e3506b65e8c4162ed56fbf3c33bc51bbc56038a4b1297219d917dd1e"
-changelog = "First release: a port of Wisdom Shaders V3 (Build 3300) to Horizon's shader API."
+changelog = "First release: a port of Wisdom Shaders V3 (Build 3300) to Curse's shader API."

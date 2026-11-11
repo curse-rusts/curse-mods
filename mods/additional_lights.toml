@@ -4,7 +4,7 @@ name = "Additional Lights"
 summary = "80 decorative lamps, floor torches and wall torches with the mod's own light levels and recipes."
 description = """
 A port of [Additional Lights](https://github.com/mgen256/AdditionalLights) by
-mgen256 for Horizon. This slice carries the 80 plain decorative light blocks —
+mgen256 for Curse. This slice carries the 80 plain decorative light blocks —
 24 lamps (light 15), 28 floor torches (light 14) and 28 wall torches (light 14)
 — with their materials, shapes, recipes and drops, 1,548 block states in all.
 

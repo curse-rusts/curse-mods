@@ -1,19 +1,19 @@
 id = "veinminer"
 kind = "native-mod"
 name = "Veinminer"
-summary = "Mine connected ores and matching trees using Horizon's native player-mining behavior."
+summary = "Mine connected ores and matching trees using Curse's native player-mining behavior."
 description = """
 An unofficial Rust port by levzzz5154. Mines connected veins, including diagonal neighbours,
-through Horizon's player-mining code, preserving loot, XP, tool wear and server block events.
+through Curse's player-mining code, preserving loot, XP, tool wear and server block events.
 Includes per-player toggles, configurable block/tool groups, a block limit and cooldown.
 
 Native source mod: install it on the launcher's Mods page, press Build there,
 and confirm the native-code warning. A supported launcher downloads its own Rust toolchain
-and builds a separate game using Horizon Mixins. Requires Git and Horizon's platform build
+and builds a separate game using Curse Mixins. Requires Git and Curse's platform build
 dependencies, and runs with your account's permissions.
 
-Each version is pinned to one Horizon Nightly and Horizon Mixins revision, named in its
-changelog; the launcher builds those exact revisions. Other Horizon revisions have not
+Each version is pinned to one Curse Nightly and Curse Mixins revision, named in its
+changelog; the launcher builds those exact revisions. Other Curse revisions have not
 been validated. Ordinary Play does not compile mods; rebuild after changing the enabled
 native-mod combination.
 
@@ -39,7 +39,7 @@ published = "2026-10-28"
 game = "26.3"
 file = "veinminer-0.3.0.hnmod"
 sha256 = "ec308c02c65bad64043828a19ef6254d1eb9d422bb1123cd065cb9e6e7b126c8"
-changelog = "Native launcher bundle, pinned to nightly 83f15fa27 and Horizon Mixins 0.5.0."
+changelog = "Native launcher bundle, pinned to nightly 83f15fa27 and Curse Mixins 0.5.0."
 
 [[versions]]
 version = "0.3.2"
@@ -47,4 +47,4 @@ published = "2026-10-31"
 game = "26.3"
 file = "veinminer-0.3.2.hnmod"
 sha256 = "31a4249da1b35972ae8b34201373c86352f4adc2f5cb3e015749d1fbfecf00a0"
-changelog = "Pinned to Nightly 2026-10-31 (d91cab6) and Horizon Mixins 4342a0b. Reads each level's height from the loaded world, so data-pack dimension heights are respected."
+changelog = "Pinned to Nightly 2026-10-31 (d91cab6) and Curse Mixins 4342a0b. Reads each level's height from the loaded world, so data-pack dimension heights are respected."

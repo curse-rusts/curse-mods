@@ -43,24 +43,26 @@ impl Default for Config {
     fn default() -> Self {
         Self {
             sidebar: true,
-            title: "Horizon SMP".into(),
-            footer: "play.playhorizon.dev".into(),
+            title: "Curse SMP".into(),
+            footer: String::new(),
             refresh_seconds: 60,
             min_seconds: 5,
             tab: true,
             tab_header: "{server}".into(),
             tab_footer: "TPS {tps} · {players} online".into(),
-            server_name: "Horizon SMP".into(),
+            server_name: "Curse SMP".into(),
             tab_refresh_seconds: 5,
         }
     }
 }
 
-/// SMP 0.13's sidebar title (`Richest players`), moved to today's when a
-/// server never changed it. True when something changed.
+/// A title an earlier version gave the sidebar (`Richest players`, `Horizon
+/// SMP`), moved to today's when a server never changed it. True when
+/// something changed.
 pub fn migrate(config: &mut Config) -> bool {
-    if config.title == "Richest players" {
+    if config.title == "Richest players" || config.title == "Horizon SMP" {
         config.title = Config::default().title;
+        config.server_name = Config::default().server_name;
         return true;
     }
     false
@@ -397,6 +399,7 @@ mod tests {
     fn the_sidebar_shows_the_player_then_the_address_and_no_ranking() {
         let d = dir();
         let mut b = Board::open(&d, Config::default()).unwrap();
+        b.config.footer = "smp.example.org".into();
         assert!(b.due(0, 0));
         b.rebuild(accounts(12), 0, 1);
         let rocky = Me {
@@ -415,7 +418,7 @@ mod tests {
                 stat("Playtime", "2h 05m"),
                 stat("Online", "42"),
                 Line::Gap,
-                Line::Footer("play.playhorizon.dev".into()),
+                Line::Footer("smp.example.org".into()),
             ]
         );
         // A player with no account yet; a server with no address.
@@ -434,6 +437,13 @@ mod tests {
         assert!(migrate(&mut old));
         assert_eq!(old, Config::default());
         assert!(!migrate(&mut old));
+        let mut previous = Config {
+            title: "Horizon SMP".into(),
+            server_name: "Horizon SMP".into(),
+            ..Config::default()
+        };
+        assert!(migrate(&mut previous));
+        assert_eq!(previous, Config::default());
         let mut own = Config {
             title: "My server".into(),
             ..Config::default()
@@ -444,7 +454,7 @@ mod tests {
 
     #[test]
     fn an_old_config_with_a_top_still_reads() {
-        let old = serde_json::json!({ "title": "Horizon SMP", "top": 3 });
+        let old = serde_json::json!({ "title": "Curse SMP", "top": 3 });
         let c: Config = serde_json::from_value(old).unwrap();
         assert_eq!(c, Config::default());
     }
@@ -528,7 +538,7 @@ mod tests {
         let (h, f) = b.tab_lines(19.96, 6.3, 42);
         assert_eq!(
             (h.as_str(), f.as_str()),
-            ("Horizon SMP", "TPS 20.0 · 42 online")
+            ("Curse SMP", "TPS 20.0 · 42 online")
         );
         assert_eq!(b.tab_due(0, &[1, 2]), vec![1, 2]);
         assert!(b.tab_due(1_000, &[1, 2]).is_empty());

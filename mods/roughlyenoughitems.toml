@@ -1,9 +1,9 @@
 id = "roughlyenoughitems"
 kind = "native-mod"
 name = "Roughly Enough Items"
-summary = """REI for Horizon: REI's item list, search, recipe screen, favorites, craftable filter and "+" button, in REI's own look."""
+summary = """REI for Curse: REI's item list, search, recipe screen, favorites, craftable filter and "+" button, in REI's own look."""
 description = """
-A port of [Roughly Enough Items (REI)](https://github.com/shedaniel/RoughlyEnoughItems) by shedaniel to Horizon, as a native mod. It draws REI's own interface, with REI's textures and layout, over the game's container screens.
+A port of [Roughly Enough Items (REI)](https://github.com/shedaniel/RoughlyEnoughItems) by shedaniel to Curse, as a native mod. It draws REI's own interface, with REI's textures and layout, over the game's container screens.
 
 - **Entry list** beside every container screen and the creative inventory, in pages (arrows, mouse wheel, a click on "1/N" for the first page). Enchanted books, potions, tipped arrows, spawn eggs and music discs are folded into one cell each; **Alt+click** unfolds them.
 - **REI's search**, coloured as you type: words, `"phrases"`, `-exclusions`, `a | b`, `@mod`, `#tooltip`, `$tag`, `*id`, `r/regex/`. The field turns red when nothing matches; Up and Down recall earlier searches.
@@ -18,7 +18,7 @@ A port of [Roughly Enough Items (REI)](https://github.com/shedaniel/RoughlyEnoug
 
 It steps aside while Just Enough Items is on: both use the same place on screen.
 
-Built for Horizon Nightly 2026-11-07 (`2ebf00a`). Native mods are compiled into the game and are not sandboxed: build only code you trust.
+Built for Curse Nightly 2026-11-07 (`2ebf00a`). Native mods are compiled into the game and are not sandboxed: build only code you trust.
 
 **Credits.** Roughly Enough Items is Copyright (c) 2018-2023 shedaniel, MIT License; the GUI textures are REI's own. This port rewrites REI in Rust under the same licence and is not affiliated with shedaniel, Mojang or Microsoft."""
 authors = ["DeportedToHell"]
@@ -36,7 +36,7 @@ published = "2026-11-09"
 game = "26.3"
 file = "roughlyenoughitems-1.1.0.hnmod"
 sha256 = "233416b0010453b3af2b018bf511a3316d104dde281921fac0be623d9153c657"
-changelog = "REI's own config screen now opens from Mod Menu and from Options > Mods > Roughly Enough Items > Configure..., over the title screen or the world. REI no longer hides when Just Enough Items is installed but not built into the game. Built for Horizon Nightly 2026-11-08 (fdc87ae)."
+changelog = "REI's own config screen now opens from Mod Menu and from Options > Mods > Roughly Enough Items > Configure..., over the title screen or the world. REI no longer hides when Just Enough Items is installed but not built into the game. Built for Curse Nightly 2026-11-08 (fdc87ae)."
 
 [[versions]]
 version = "1.0.1"

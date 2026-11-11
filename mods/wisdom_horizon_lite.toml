@@ -1,7 +1,7 @@
 id = "wisdom_horizon_lite"
 kind = "shader"
-name = "Wisdom Shaders V3 Lite (Horizon port)"
-summary = "A lighter Wisdom Shaders V3 port for Horizon, for more FPS."
+name = "Wisdom Shaders V3 Lite (Curse port)"
+summary = "A lighter Wisdom Shaders V3 port for Curse, for more FPS."
 description = """
 A lighter version of the Wisdom Shaders V3 port (`wisdom_horizon`) for more FPS: the same lighting, atmosphere, fog and AgX tonemap, with a smaller shadow map, no bloom or FXAA, and soft shadows, cloud shadows and water reflections off by default (each can be turned back on in the settings).
 
@@ -25,11 +25,11 @@ sha256 = "ba41f0094a886b2e86a462994206fa184ebabf424dc0736829ddc7024ea9e880"
 changelog = """
 - Night: the sky and fog no longer turn black when rain hides the stars, rain streaks stay faint in the dark, and a "Night brightness" option raises the moonlight and night ambient light (3x Wisdom's by default).
 - Rain: lighter fog in the rain ("Rain fog", 0.5 by default; 1 is Wisdom's), the water gets the same fog as the land, and the sun's glint on water fades under rain clouds.
-- Water: its top stays flat (the waves are in the normals, as in Wisdom), and the mirror Horizon draws with vanilla's light is brought to this pack's light.
+- Water: its top stays flat (the waves are in the normals, as in Wisdom), and the mirror Curse draws with vanilla's light is brought to this pack's light.
 - Mobs, items, chests and particles: a post pass relights them to match this pack's light on the terrain in view, eased over time ("Light mobs and chests", with a diagnostic view).
-- Held light sources light the terrain when Horizon's Dynamic lights extra is on.
+- Held light sources light the terrain when Curse's Dynamic lights extra is on.
 - Glowing blocks show their own colour instead of burning out to white at night ("Glowing blocks").
-- The far edge of the loaded terrain blends into the sky ("Horizon haze")."""
+- The far edge of the loaded terrain blends into the sky ("Curse haze")."""
 
 [[versions]]
 version = "1.1.0"
@@ -37,4 +37,4 @@ published = "2026-11-04"
 game = "26.3"
 file = "wisdom_horizon_lite-1.1.0.hshader"
 sha256 = "662570653111bd34fec37a7482791b8b1d0bdcee1bcba5351c4137acababb818"
-changelog = "First release: the LITE profile of Wisdom Shaders V3 (Build 3300), ported to Horizon's shader API."
+changelog = "First release: the LITE profile of Wisdom Shaders V3 (Build 3300), ported to Curse's shader API."

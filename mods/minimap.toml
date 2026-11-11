@@ -3,7 +3,7 @@ kind = "native-mod"
 name = "Minimap"
 summary = "A map of the world around you in a corner of the screen."
 description = """
-Horizon's own minimap, formerly an extra in Options > Horizon Extras.
+Curse's own minimap, formerly an extra in Options > Curse Extras.
 
 - A map of the land around you, drawn like a map item: vanilla's map colours with their height shading and water depth, and your arrow.
 - Underground, under a roof and in the Nether it maps the floor around your height.
@@ -11,12 +11,12 @@ Horizon's own minimap, formerly an extra in Options > Horizon Extras.
 
 It shows a map in a corner of the screen: nothing else.
 
-Now a native mod (2.0.0): built into the game by the launcher, on the Horizon you play, like any native mod
+Now a native mod (2.0.0): built into the game by the launcher, on the Curse you play, like any native mod
 (install it on the launcher's Mods page, then press Build there). Your settings carry over from 1.0.0. Turn it off in
 Options > Mods: it rests at once, and the next build leaves it out. Its source is
-[horizon-mods/native/minimap](https://github.com/horizon-rust/horizon-mods/tree/main/native/minimap).
+[curse-mods/native/minimap](https://github.com/curse-rusts/curse-mods/tree/main/native/minimap).
 """
-authors = ["Horizon"]
+authors = ["Curse"]
 owners = ["ludovic111"]
 owner_ids = [136255825]
 license = "MIT"
@@ -31,7 +31,7 @@ published = "2026-10-29"
 game = "26.3"
 file = "minimap-2.0.0.hnmod"
 sha256 = "6f5dbca0699562b088a04b3f5abdc1b7faf8da51257a96da0a4ed639c6644ed9"
-changelog = "Native: built into the game by the launcher on Horizon's native hook points; settings carry over; turn it off in Options > Mods."
+changelog = "Native: built into the game by the launcher on Curse's native hook points; settings carry over; turn it off in Options > Mods."
 
 [[versions]]
 version = "1.0.0"

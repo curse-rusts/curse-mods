@@ -45,3 +45,7 @@ It checks the row and the settings page in Options > Mods, that the box shows in
 and writes `horizon-mods/.horizon-mod-data/coords_hud/shown`, and takes a screenshot of `/where`'s line in chat.
 
 License: MIT.
+
+`horizon-client`, `horizon-ctl`, `horizon-prepare`, `horizon-mods/`, `.horizon-mod-data` and `horizon-mods.txt`
+are the public mirror's names, which `native/tools/native.py` fetches and builds; the product is Curse, with
+`curse-client`, `curse-mods/` and `.curse-mod-data`.

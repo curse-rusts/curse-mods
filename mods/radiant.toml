@@ -3,7 +3,7 @@ kind = "shader"
 name = "Radiant"
 summary = "Cinematic but playable: warm sun, soft shadows, light shafts, golden haze, sunset clouds, wet rainy ground and a filmic grade."
 description = """
-A cinematic shader pack for Horizon that is built to be played in, not just screenshotted.
+A cinematic shader pack for Curse that is built to be played in, not just screenshotted.
 
 - **Light and shadow:** soft sun and moon shadows, light through leaves, coloured block light, flickering torches, ambient occlusion.
 - **Sky:** deep blue days, layered gold, pink and violet sunsets, a round sun, drifting clouds, twinkling stars and a faint Milky Way.

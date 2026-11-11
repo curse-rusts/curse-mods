@@ -1,9 +1,9 @@
 id = "projecte"
 kind = "mod"
-name = "ProjectE for Horizon (assets)"
-summary = "The blocks, items, textures, text and recipes of ProjectE for Horizon. Needs the native mod."
+name = "ProjectE for Curse (assets)"
+summary = "The blocks, items, textures, text and recipes of ProjectE for Curse. Needs the native mod."
 description = """
-**This is one of the two parts of [ProjectE for Horizon](https://playhorizon.dev/mods/projecte_core), and does little alone.** Install both: this one, the assets, and the native part.
+**This is one of the two parts of [ProjectE for Curse](https://github.com/curse-rusts/curse-mods/blob/main/mods/projecte_core.toml), and does little alone.** Install both: this one, the assets, and the native part.
 
 It holds the blocks, items, creative tab, textures, text and recipes. It has no code. The code, and the description of what the mod does, are in the native part.
 

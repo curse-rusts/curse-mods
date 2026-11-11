@@ -1,9 +1,9 @@
 id = "notenoughanimations"
 kind = "native-mod"
 name = "Not Enough Animations"
-summary = "tr7zw's third-person animations for Horizon: eating, climbing, rowing, maps and bows."
+summary = "tr7zw's third-person animations for Curse: eating, climbing, rowing, maps and bows."
 description = """
-A native port of [Not Enough Animations](https://github.com/tr7zw/NotEnoughAnimations) by **tr7zw**, brought to Horizon by **romaeboj**.
+A native port of [Not Enough Animations](https://github.com/tr7zw/NotEnoughAnimations) by **tr7zw**, brought to Curse by **romaeboj**.
 
 It improves third-person player animations without changing gameplay:
 
@@ -22,9 +22,9 @@ Every animation has its own toggle in **Options → Mods → Not Enough Animatio
 
 Client-side only: it changes how your player model looks, not movement, combat or item stats.
 
-Requires Horizon 26.3. Install it from the launcher's Mods page, then press **Build** on the same page. The source is at the link below; the original mod and its licence are credited there.
+Requires Curse 26.3. Install it from the launcher's Mods page, then press **Build** on the same page. The source is at the link below; the original mod and its licence are credited there.
 
-Original mod by tr7zw. Horizon port by romaeboj."""
+Original mod by tr7zw. Curse port by romaeboj."""
 authors = ["tr7zw", "romaeboj"]
 owners = ["Dbdbdndbbsbs"]
 owner_ids = [97656496]
@@ -41,7 +41,7 @@ game = "26.3"
 file = "notenoughanimations-0.2.76.hnmod"
 sha256 = "39e3459d3d6b6ec97f9a9654d2c6b358b085e8158e50de3327873cfbcd114645"
 changelog = """
-Updated to the latest Horizon (`fdc87aecdbd116bf1e08adcd062fcbaea8c2e2ca`).
+Updated to the latest Curse (`fdc87aecdbd116bf1e08adcd062fcbaea8c2e2ca`).
 
 - Filled maps render on one side only, with paper around the content and on the back; no z-fighting.
 - Maps show in the inventory player preview.

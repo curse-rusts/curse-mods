@@ -4,7 +4,7 @@ name = "Silent's Gems"
 summary = "21 gems with storage blocks and 84 ores, plus overworld, nether and end worldgen."
 description = """
 A port of [Silent's Gems](https://github.com/SilentChaos512/SilentGems) by SilentChaos512
-for Horizon: 21 gems, their storage blocks and their ores.
+for Curse: 21 gems, their storage blocks and their ores.
 
 Implemented so far:
 - The 21 gems as items (ruby, carnelian, topaz, citrine, heliodor, moldavite, peridot,
@@ -32,7 +32,7 @@ Not yet ported:
 
 A content/logic data carry: the 21-gem registry is a test-only Rust module (no injection). MIT — the original copyright and licence notices are kept in
 the port repository (see LICENSE and LICENSE-NOTICE.md there). Pinned to
-Horizon 1d63e0a and horizon-mixins 5a64af93.
+Curse 1d63e0a and horizon-mixins 5a64af93.
 """
 authors = ["SilentChaos512", "AdLf0208"]
 owners = ["AdLf0208"]

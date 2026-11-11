@@ -3,11 +3,11 @@ kind = "native-mod"
 name = "Server Atlas"
 summary = "Find and organize Minecraft servers with local notes, favorites, filters, and opt-in discovery."
 description = """
-Server Atlas is a native Rust multiplayer browser for Horizon and Minecraft Java 26.3. It adds search, favorites, recent servers, LAN, reusable filters, and local notes and groups in a Minecraft-style interface.
+Server Atlas is a native Rust multiplayer browser for Curse and Minecraft Java 26.3. It adds search, favorites, recent servers, LAN, reusable filters, and local notes and groups in a Minecraft-style interface.
 
 Online Discover is off until you accept the privacy screen. Modrinth and minecraftserve.rs receive listing requests with public filters. Discover contacts visible servers and a small margin for status checks. Saved addresses, search text, player names, and notes stay local. Feedback and server suggestions save local drafts. The toolbar Ko-fi button opens https://ko-fi.com/foryou41 in your browser.
 
-Install the .hnmod in your instance, build it through the Horizon launcher, and open Multiplayer. The bundle targets Horizon Nightly 6475f62 and uses the normal native mod workflow. English and German are included. Developed by shuab with Codex assistance."""
+Install the .hnmod in your instance, build it through the Curse launcher, and open Multiplayer. The bundle targets Curse Nightly 6475f62 and uses the normal native mod workflow. English and German are included. Developed by shuab with Codex assistance."""
 authors = ["shuab"]
 owners = ["Musti3214"]
 owner_ids = [266587196]

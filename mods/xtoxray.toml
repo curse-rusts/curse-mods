@@ -3,7 +3,7 @@ kind = "native-mod"
 name = "X To Xray"
 summary = "Opensource Xraymod"
 description = """
-Press **X** to see ores through the world, as a native mod for Horizon.
+Press **X** to see ores through the world, as a native mod for Curse.
 
 While it is on, every block except ores (coal, copper, iron, gold, redstone, lapis, diamond, emerald, their
 deepslate kinds, nether gold and quartz, ancient debris), chests, spawners, water and lava is drawn as air, and what is left shines at full brightness. Press X again to see the world as usual. Rebind the key in

@@ -15,7 +15,7 @@ Placing blocks fast is all about timing: vanilla places a block every four ticks
 
 Some servers see fast, accurate placing as a cheat: check their rules, or turn "Allowed on servers" off.
 
-A port of [Accurate Block Placement: Reborn](https://modrinth.com/mod/accurate-block-placement-reborn) (MIT) by Clayborn, Flourick, schwar and KadTheHunter, rewritten in Rust for Horizon."""
+A port of [Accurate Block Placement: Reborn](https://modrinth.com/mod/accurate-block-placement-reborn) (MIT) by Clayborn, Flourick, schwar and KadTheHunter, rewritten in Rust for Curse."""
 authors = ["Lutziano888"]
 owners = ["Lutziano888"]
 owner_ids = [129792568]

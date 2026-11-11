@@ -1,9 +1,9 @@
 id = "waymap"
 kind = "native-mod"
 name = "Waymap"
-summary = "Persistent client-side waypoints with 3D world markers, minimap dots, a native editor, and automatic death markers for Horizon."
+summary = "Persistent client-side waypoints with 3D world markers, minimap dots, a native editor, and automatic death markers for Curse."
 description = """
-Waymap brings complete waypoint management into the game itself. Instead of relying only on chat commands or external tools, it provides a native Horizon screen for creating, finding and editing waypoints, while keeping the existing /wp commands and minimap behaviour. Waypoints are stored locally per world or server, survive restarts, and never require server-side installation. Deaths are recorded automatically so the player can always find the place where they died.
+Waymap brings complete waypoint management into the game itself. Instead of relying only on chat commands or external tools, it provides a native Curse screen for creating, finding and editing waypoints, while keeping the existing /wp commands and minimap behaviour. Waypoints are stored locally per world or server, survive restarts, and never require server-side installation. Deaths are recorded automatically so the player can always find the place where they died.
 Features
 - World markers — 3D waypoints projected from the player's camera, hidden when outside the view
 - Minimap markers — coloured dots at the correct map position, including rotated maps

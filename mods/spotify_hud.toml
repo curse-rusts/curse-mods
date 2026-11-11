@@ -20,9 +20,9 @@ The buttons need **Spotify Premium** (Spotify refuses them from free accounts) a
 - `/music volume [0-100] | play | pause | next | previous | shuffle | repeat | hide | position | restart | logout`
 - Keys for next, previous, play/pause and hiding the box in Options → Mods → Spotify HUD (unbound by default).
 
-Settings, the login and `theme.json` (colours you can edit) are in `horizon-mods/.horizon-mod-data/spotify_hud/`.
+Settings, the login and `theme.json` (colours you can edit) are in `curse-mods/.curse-mod-data/spotify_hud/`.
 
-By tomasmendes01 (in-game: iLoong). Inspired by ThatGravyBoat's Craftify, written from scratch for Horizon. Not affiliated with Spotify."""
+By tomasmendes01 (in-game: iLoong). Inspired by ThatGravyBoat's Craftify, written from scratch for Curse. Not affiliated with Spotify."""
 authors = ["tomasmendes01"]
 owners = ["tomasmendes01"]
 owner_ids = [68385376]

@@ -12,7 +12,7 @@ Rider HUD improves the vanilla Minecraft interface while riding horses and other
 - Preserves the familiar vanilla Minecraft HUD style.
 - Includes in-game settings to toggle features.
 
-Lightweight, client-side native mod built in Rust for Horizon."""
+Lightweight, client-side native mod built in Rust for Curse."""
 authors = ["Xariami"]
 owners = ["maliferen"]
 owner_ids = [234505373]

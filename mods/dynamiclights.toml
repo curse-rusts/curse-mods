@@ -11,7 +11,7 @@ Glowing items light up the world around you while you carry them.
 - **Water puts out fire** (optional): torches and fireballs go dark underwater, lanterns stay lit.
 - Settings: each source on or off, brightness, range and how many lights at once, and a key to toggle the mod. English and Russian.
 
-Built on Horizon's own dynamic light system (it takes over Horizon Extras > Dynamic lights while it is on). Built for Horizon Nightly 2026-11-07 (`2ebf00a`). Native mods are compiled into the game and are not sandboxed: build only code you trust."""
+Built on Curse's own dynamic light system (it takes over Curse Extras > Dynamic lights while it is on). Built for Curse Nightly 2026-11-07 (`2ebf00a`). Native mods are compiled into the game and are not sandboxed: build only code you trust."""
 authors = ["DeportedToHell"]
 owners = ["DeportedToHell"]
 owner_ids = [344119465]

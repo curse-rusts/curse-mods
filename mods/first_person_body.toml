@@ -15,11 +15,11 @@ Settings in Options > Mods > First Person Body: on/off, arms, body offset, while
 
 Client side only: works in single player and on any server. No network, file or process access beyond its own settings.
 
-Horizon has no hook point for drawing your own player in first person, so besides hook points this mod hooks Horizon's own rendering functions (own_body_in_view, player_model_geometry, player_model_visibility, base_transform and the head-item, ear and cosmetic layers); the README lists each. They act only while your own first-person model is drawn. A later Horizon that changes them needs an update of this mod.
+Curse has no hook point for drawing your own player in first person, so besides hook points this mod hooks Curse's own rendering functions (own_body_in_view, player_model_geometry, player_model_visibility, base_transform and the head-item, ear and cosmetic layers); the README lists each. They act only while your own first-person model is drawn. A later Curse that changes them needs an update of this mod.
 
 Source: https://github.com/selfmonoraque5/first-person-body
 
-Inspired by First-person Model by tr7zw (https://modrinth.com/mod/first-person-model). Written from scratch for Horizon: it contains none of its code or assets and is not made or endorsed by tr7zw."""
+Inspired by First-person Model by tr7zw (https://modrinth.com/mod/first-person-model). Written from scratch for Curse: it contains none of its code or assets and is not made or endorsed by tr7zw."""
 authors = ["selfmonoraque5"]
 owners = ["selfmonoraque5"]
 owner_ids = [86315101]

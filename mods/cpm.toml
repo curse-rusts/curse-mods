@@ -1,10 +1,10 @@
 id = "cpm"
 kind = "native-mod"
-name = "CustomPlayerModels-Horizon"
+name = "CustomPlayerModels-Curse"
 summary = "Customize your Minecraft avatar with custom models and animations"
 description = """
 #For version "Nightly 2026-11-01 c9d474d"
-CustomPlayerModels-Horizon allows you to use custom player models and animations directly in Minecraft. Customize your avatar with unique shapes, extra parts, and glowing textures. 
+CustomPlayerModels-Curse allows you to use custom player models and animations directly in Minecraft. Customize your avatar with unique shapes, extra parts, and glowing textures. 
 
 ## How to use
 go to options > mods > CPM-settings and add some models, and load it onto your character. when in game you can also use gestures with G and in the same menu pick different models"""

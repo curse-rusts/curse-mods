@@ -17,7 +17,7 @@ A huge starship you fly yourself, with a large walkable interior that moves with
 
 Weapons hurt the mobs they hit. With blasting turned on in the control panel (off by default), the nose guns and beams also blow up the blocks they hit. Portals can hang in the air, so a player on foot falls if there is no ground at the exit, including into the End's void.
 
-Built for this Horizon commit only: `68ac6f647e7022b2c696e81863d7cface28c9416`."""
+Built for this Curse commit only: `68ac6f647e7022b2c696e81863d7cface28c9416`."""
 authors = ["repositorykreml1n"]
 owners = ["repositorykreml1n"]
 owner_ids = [271232376]
@@ -33,4 +33,4 @@ published = "2026-11-01"
 game = "26.3"
 file = "astral_cruiser-0.1.0.hnmod"
 sha256 = "69100219f92307f9190712da2854bfd43f15cf81773d89d89d6dd22411caa2f2"
-changelog = "First release, built for Horizon 68ac6f6."
+changelog = "First release, built for Curse 68ac6f6."

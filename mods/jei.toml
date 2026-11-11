@@ -1,11 +1,11 @@
 id = "jei"
 kind = "native-mod"
-name = "JEI for Horizon"
-summary = "An item and recipe viewer for Horizon: every item beside container screens, with search, recipes, uses, tooltips and bookmarks"
+name = "JEI for Curse"
+summary = "An item and recipe viewer for Curse: every item beside container screens, with search, recipes, uses, tooltips and bookmarks"
 description = """
-An item and recipe viewer for [Horizon](https://playhorizon.dev), the Rust reimplementation of Minecraft: Java Edition.
+An item and recipe viewer for [Curse](https://https://curse-rusts.github.io), the Rust reimplementation of Minecraft: Java Edition.
 
-Horizon JEI is inspired by [JustEnoughItems (JEI)](https://github.com/mezz/JustEnoughItems). JEI serves as the reference specification, while this project is a completely new Rust implementation built around Horizon's native hook points.
+Curse JEI is inspired by [JustEnoughItems (JEI)](https://github.com/mezz/JustEnoughItems). JEI serves as the reference specification, while this project is a completely new Rust implementation built around Curse's native hook points.
 
 **Version 0.2.1 — Overlay and bookmarks**
 
@@ -26,17 +26,17 @@ Horizon JEI is inspired by [JustEnoughItems (JEI)](https://github.com/mezz/JustE
 
 Container slot click integration (R and U work over any slot, a click does not), the creative inventory panel, the non-recipe categories (anvil, grindstone, composter, and fuel), shift-click recipe placement, recipe transfer into furnaces, and the `$tooltip` / `%creative tab` searches are not yet supported.
 
-Some of these features require native hook points that Horizon does not currently expose. See the [JEI parity matrix](https://github.com/enderliker/horizon-jei/blob/main/docs/jei-parity.md) for implementation details.
+Some of these features require native hook points that Curse does not currently expose. See the [JEI parity matrix](https://github.com/enderliker/horizon-jei/blob/main/docs/jei-parity.md) for implementation details.
 
 ### Requirements & Security
 
-Requires Horizon **26.3** and hook points version **313** or later: tested and verified on Horizon Nightly (`6560641` and latest `fdc87ae`).
+Requires Curse **26.3** and hook points version **313** or later: tested and verified on Curse Nightly (`6560641` and latest `fdc87ae`).
 
-Horizon native mods are compiled directly into the game and are **not sandboxed**. Only build source code you trust.
+Curse native mods are compiled directly into the game and are **not sandboxed**. Only build source code you trust.
 
-Horizon JEI reads the game's items and recipes, its container interface, chat, tooltips and screens. It writes only its own folder, `config/jei/` (`jei.cfg` for the options, `bookmarks.txt` for the bar), and nothing else. It makes no network connections.
+Curse JEI reads the game's items and recipes, its container interface, chat, tooltips and screens. It writes only its own folder, `config/jei/` (`jei.cfg` for the options, `bookmarks.txt` for the bar), and nothing else. It makes no network connections.
 
-*Unofficial project. Not affiliated with mezz, Mojang, Microsoft, or the Horizon project.*"""
+*Unofficial project. Not affiliated with mezz, Mojang, Microsoft, or the Curse project.*"""
 authors = ["enderliker"]
 owners = ["enderliker"]
 owner_ids = [166346005]
@@ -71,7 +71,7 @@ RURqzx718YYz/AZEFNcRh0lQFAgg8JsladNTOULcWqBnZFoFoApH0UvoQQkTk8wC/LfZpfJkrn7XRzSU
 trusted comment: jei 0.1.0 for Horizon 26.3
 OqC3JuFFGuGNdxATsGIvM20nrld1ME2ks3tI2hfaMX2s5bCgwYjieUDk7FbDQD8zxd3KHqOYaUTz6T+njgUNCw=="""
 changelog = """
-The first playable Horizon JEI viewer, built on Horizon's native hook points (version 2).
+The first playable Curse JEI viewer, built on Curse's native hook points (version 2).
 
 ### Item Browser & Search
 - Added an item panel alongside container screens, displaying every item known to the game with pagination.

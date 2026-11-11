@@ -54,3 +54,7 @@ The game hook supplies position and style state. Two additional injections aroun
 ![Stone outline and coordinate strip, shown in a multiplayer game](docs/minimap-outline-coordinates.png)
 
 Screenshot supplied by eltanschauung. It shows the Stone outline and coordinates enabled; those are optional settings, and the other mods visible in the scene are separate from this change.
+
+`horizon-client`, `horizon-ctl`, `horizon-prepare`, `horizon-mods/`, `.horizon-mod-data` and `horizon-mods.txt`
+are the public mirror's names, which `native/tools/native.py` fetches and builds; the product is Curse, with
+`curse-client`, `curse-mods/` and `.curse-mod-data`.

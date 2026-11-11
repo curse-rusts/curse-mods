@@ -3,7 +3,7 @@ kind = "native-mod"
 name = "Eating Animation"
 summary = "While you eat food, or drink a potion or milk, the item in your hand shows its bitten frames."
 description = """
-**Port of Eating Animation for Horizon.** Based on [Eating Animation](https://github.com/Theoness1/EatingAnimation) by Theoness1.
+**Port of Eating Animation for Curse.** Based on [Eating Animation](https://github.com/Theoness1/EatingAnimation) by Theoness1.
 
 ## What it does
 
@@ -50,7 +50,7 @@ trusted comment: timestamp:1793955778\tfile:eatinganimation-0.2.0.hnmod\thashed
 0bp1WWbSynkXapYDaodH6cDf4MwL46wyPqJ1IEwc0PHvPWhCG4AE2mq9qXespWPDstYWEuM1BRhadKrNk70lAA=="""
 changelog = """
 Build-in texture pack.
-Fix for https://github.com/soufied/EatingAnimation-Horizon/issues/2 | https://github.com/horizon-rust/horizon/pull/10215"""
+Fix for https://github.com/soufied/EatingAnimation-Horizon/issues/2"""
 
 [[versions]]
 version = "0.1.1"
@@ -78,4 +78,4 @@ untrusted comment: signature from minisign secret key
 RUT6eNq4e5WfVJPSxJOh730W1FMzydyVRO2S58rux9xbEtEU+mDgsqWX65rscWaUH3zqOkLan6quW/u9nEZDgXrNz1n6IHnT5Aw=
 trusted comment: timestamp:1793371727\tfile:eatinganimation-0.1.0.hnmod\thashed
 qCCGAWAc39kDujbX9CsdXu/URjpNybAOxkomTi18GnzJhMLtsbj0ZfVJaVCSxnh0VvznGQvoH9/DEdRAxBAVBg=="""
-changelog = "First release. Eating Animation for Horizon as a native mod: the food, milk and potion in your hand show bitten frames while you eat or drink them."
+changelog = "First release. Eating Animation for Curse as a native mod: the food, milk and potion in your hand show bitten frames while you eat or drink them."

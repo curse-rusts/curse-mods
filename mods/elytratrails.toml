@@ -1,9 +1,9 @@
 id = "elytratrails"
 kind = "native-mod"
 name = "ElytraTrails"
-summary = "A Horizon mod that adds elytra trails with additional features."
+summary = "A Curse mod that adds elytra trails with additional features."
 description = """
-A native mod for Horizon. The idea comes from [ElytraTrails](https://github.com/dbrighthd/elytratrails) by dbrighthd.
+A native mod for Curse. The idea comes from [ElytraTrails](https://github.com/dbrighthd/elytratrails) by dbrighthd.
 
 What it does
 
@@ -44,7 +44,7 @@ Open Options > Mods > ElytraTrails:
 ## Credits
 
 - ElytraTrails by [dbrighthd](https://github.com/dbrighthd/elytratrails) (MPL-2.0), the original mod. The idea of wing trails comes from it.
-- This is a separate implementation for Horizon, written from scratch in Rust. It does not contain code from the original mod.
+- This is a separate implementation for Curse, written from scratch in Rust. It does not contain code from the original mod.
 
 License
 

@@ -3,7 +3,7 @@ kind = "native-mod"
 name = "FPS Counter"
 summary = "Frames per second in a corner of the screen, with the minimum and the 1% low."
 description = """
-Horizon's own FPS counter, formerly an extra in Options > Horizon Extras.
+Curse's own FPS counter, formerly an extra in Options > Curse Extras.
 
 - Frames in the last second, in a small box in the corner you pick.
 - Optionally the slowest frame and the 1% low of the last 5 seconds.
@@ -11,12 +11,12 @@ Horizon's own FPS counter, formerly an extra in Options > Horizon Extras.
 
 It reads the game's own frame counter and draws on the HUD: nothing else.
 
-Now a native mod (2.0.0): built into the game by the launcher, on the Horizon you play, like any native mod
+Now a native mod (2.0.0): built into the game by the launcher, on the Curse you play, like any native mod
 (install it on the launcher's Mods page, then press Build there). Your settings carry over from 1.0.0. Turn it off in
 Options > Mods: it rests at once, and the next build leaves it out. Its source is
-[horizon-mods/native/fps-overlay](https://github.com/horizon-rust/horizon-mods/tree/main/native/fps-overlay).
+[curse-mods/native/fps-overlay](https://github.com/curse-rusts/curse-mods/tree/main/native/fps-overlay).
 """
-authors = ["Horizon"]
+authors = ["Curse"]
 owners = ["ludovic111"]
 owner_ids = [136255825]
 license = "MIT"
@@ -31,7 +31,7 @@ published = "2026-10-29"
 game = "26.3"
 file = "fps_overlay-2.0.0.hnmod"
 sha256 = "bedb670e2490ce8239906c86eabd3a0c131ef5037b2937607231bdbdba38c171"
-changelog = "Native: built into the game by the launcher on Horizon's native hook points; settings carry over; turn it off in Options > Mods."
+changelog = "Native: built into the game by the launcher on Curse's native hook points; settings carry over; turn it off in Options > Mods."
 
 [[versions]]
 version = "1.0.0"

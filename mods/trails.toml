@@ -17,9 +17,9 @@ Trails fade after a few seconds, or stay in persistent mode (bounded in memory, 
 - **Options > Mods > Trails > Settings**: mode, colours, sizes, spacing, opacity, glow, rainbow, fade times and render distance.
 - `/trails on|off`, `/trails mode paws|particle|line|ribbon`, `/trails set <setting> <value>` (e.g. `/trails set color #7FD4FF`), `/trails settings`, `/trails clear`, `/trails reset`.
 
-**What it does and doesn't do**: it reads your position, the blocks under you and the light level, draws in the world, and saves its settings in `horizon-mods/.horizon-mod-data/trails/`. It makes no network connections and doesn't change gameplay, the world or any other files.
+**What it does and doesn't do**: it reads your position, the blocks under you and the light level, draws in the world, and saves its settings in `curse-mods/.curse-mod-data/trails/`. It makes no network connections and doesn't change gameplay, the world or any other files.
 
-Known issue: the textures use Horizon's shared mod image slot, so another mod that uploads its own image there can clash with them."""
+Known issue: the textures use Curse's shared mod image slot, so another mod that uploads its own image there can clash with them."""
 authors = ["fbi"]
 owners = ["fbikat"]
 owner_ids = [253167313]

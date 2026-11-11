@@ -49,3 +49,7 @@ while C is held, and that the page's buttons write the same files. CI runs `carg
 and checks the game on the tested commit, and every Monday on the newest Nightly.
 
 License: MIT.
+
+`horizon-client`, `horizon-ctl`, `horizon-prepare`, `horizon-mods/`, `.horizon-mod-data` and `horizon-mods.txt`
+are the public mirror's names, which `native/tools/native.py` fetches and builds; the product is Curse, with
+`curse-client`, `curse-mods/` and `.curse-mod-data`.

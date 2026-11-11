@@ -17,9 +17,9 @@ Cut one log with an axe: the whole tree tips over like a real falling tree, cras
 
 **What it does and doesn't do.** It runs server-side, where the world runs: players who join install nothing. No network access, no telemetry, never runs a program. It reads and writes one file, `<world>/data/chop.txt` (settings, stats, player-placed logs). It only touches trees, the sapling it replants, its own `block_display` entities and what a falling tree hits. Besides the game's functions, it runs a few vanilla commands as the server: `kill` on its own tagged displays, `item modify` for the axe's wear, `damage` on a player the tree hits (off by default), and `summon item` / `setblock … keep` for loot and replanting when the tree is in another dimension.
 
-Native source mod: install it on the launcher's Mods page, press Build there, and confirm the native-code warning. The launcher builds a separate game with it, and it runs with your account's permissions. Each version is pinned to one Horizon Nightly and Horizon Mixins revision, named in its changelog; the launcher builds those exact revisions.
+Native source mod: install it on the launcher's Mods page, press Build there, and confirm the native-code warning. The launcher builds a separate game with it, and it runs with your account's permissions. Each version is pinned to one Curse Nightly and Curse Mixins revision, named in its changelog; the launcher builds those exact revisions.
 
-Original mod by Mayonesu0. All rights reserved, except the grants in its [LICENSE](https://github.com/Mayonesu0/chop/blob/main/LICENSE): players may use it unchanged, Horizon's registry may distribute it, and Horizon's reviewers may read it to review it."""
+Original mod by Mayonesu0. All rights reserved, except the grants in its [LICENSE](https://github.com/Mayonesu0/chop/blob/main/LICENSE): players may use it unchanged, Curse's registry may distribute it, and Curse's reviewers may read it to review it."""
 authors = ["Mayonesu0", "Claude"]
 owners = ["Mayonesu0"]
 owner_ids = [350298764]
@@ -41,4 +41,4 @@ untrusted comment: signature from minisign secret key\r
 RUSwx1v4zUCUjfR+WYS97be0UecaBcKGyNXNsCQAPVG0j2U2yeMfnNPkWMEU9CMOobMI6nKaPj/Kqv0EPAuw2xiPnRaduNgI8wA=\r
 trusted comment: timestamp:1793711491\tfile:chop-1.0.1.hnmod\thashed\r
 eOi2t+LMQ4LOM/nsJqmpvAraWsLcgdRZA4OJotjBkgxcANkG3MeZ9tbAKbEaidIy1kBSZyc4Dri+3MtOsd+xBA=="""
-changelog = "First release (1.0.0 was never published: its package carried a LICENSE file the registry's checker refuses; the code is the same). Pinned to Horizon Nightly 2026-11-01 (c9d474d) and Horizon Mixins ddd9700; the launcher builds those exact revisions."
+changelog = "First release (1.0.0 was never published: its package carried a LICENSE file the registry's checker refuses; the code is the same). Pinned to Curse Nightly 2026-11-01 (c9d474d) and Curse Mixins ddd9700; the launcher builds those exact revisions."

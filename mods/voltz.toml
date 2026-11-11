@@ -3,7 +3,7 @@ kind = "mod"
 name = "Voltz (assets)"
 summary = "The blocks, items, textures, text and recipes of Voltz. Needs the Voltz native mod."
 description = """
-**This is one of the two parts of [Voltz](https://playhorizon.dev/mods/voltz_core), and does little alone.** Install both: this one, the assets, and the native part.
+**This is one of the two parts of [Voltz](https://github.com/curse-rusts/curse-mods/blob/main/mods/voltz_core.toml), and does little alone.** Install both: this one, the assets, and the native part.
 
 It holds the blocks, items, creative tabs, textures, text and recipes of Voltz. It has no code. The code, and the description of what the mod does, are in Voltz.
 
@@ -23,4 +23,4 @@ published = "2026-11-06"
 game = "26.3"
 file = "voltz-0.3.0.hmod"
 sha256 = "241548ff66203b4587bdbe5f48d04e8ac24b61ffc8773ea6714b1bd494f96c0a"
-changelog = "First release in the registry. Pinned to Horizon Nightly 66f3981 and Horizon Mixins e8cd0aa."
+changelog = "First release in the registry. Pinned to Curse Nightly 66f3981 and Curse Mixins e8cd0aa."

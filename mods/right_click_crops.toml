@@ -22,7 +22,7 @@ Wheat, carrots, potatoes, beetroot, nether wart, cocoa, torchflower, pitcher cro
 - Bone meal, ordinary breaking and planting, sweet berries and glow berries keep their normal behaviour.
 
 ### Compatibility
-For Minecraft 26.3. Each version is built and gameplay-tested on one exact Horizon Nightly; the launcher warns when a newer Nightly breaks it. Tested revisions and results: [Validation](https://github.com/AyanoKaito/horizon-right-click-crops/blob/main/VALIDATION.md).
+For Minecraft 26.3. Each version is built and gameplay-tested on one exact Curse Nightly; the launcher warns when a newer Nightly breaks it. Tested revisions and results: [Validation](https://github.com/AyanoKaito/horizon-right-click-crops/blob/main/VALIDATION.md).
 
 This is a native mod: install only if you trust its source and accept the launcher's native-code warning.
 
@@ -50,7 +50,7 @@ untrusted comment: signature from minisign secret key\r
 RURwbuaByP5mMzuPfAJmER9wI28tgK38Mep2zAKwU82bFZt+grGVZOcHq03jTwRSPx7BxM2s6fiQSG1yBNj3fnTM254AAdMTmgY=\r
 trusted comment: timestamp:1794046822\tfile:right_click_crops-1.0.1.hnmod\thashed\r
 eZC0QPTQ1vVVypFSHHcn3hb29MfdbBU8aXb3q7Rzrgroq8O9q2BZzniMx9XqwvyYcRJIs+RZZxmEwsiF9ZoNAA=="""
-changelog = "Compatibility patch for Horizon Nightly 2026-11-05 (`66f3981`). Horizon's block loot helper now takes the broken block's entity data; the managed plants have none, so harvesting passes none and loot is unchanged. No gameplay changes. Validated in single-player and for LAN host and guest on that exact revision."
+changelog = "Compatibility patch for Curse Nightly 2026-11-05 (`66f3981`). Curse's block loot helper now takes the broken block's entity data; the managed plants have none, so harvesting passes none and loot is unchanged. No gameplay changes. Validated in single-player and for LAN host and guest on that exact revision."
 
 [[versions]]
 version = "1.0.0"
@@ -64,4 +64,4 @@ RURwbuaByP5mM4x8HGWHv/S/WlHPsmamRwsi70PTq7E5u4uJ7wyNzNT4rwpR/vGA9V2H6w9yLhmF1CPt
 trusted comment: timestamp:1793523764\tfile:right_click_crops-1.0.0.hnmod\thashed
 seiWz0D/X34FIKhiE1yfZc2uAkkSGuwAnTHbGrK63sHg+HdL+EgqEkzaxNgJTiMOdnf/iIdSkDVVwuF+Od/SCQ==
 """
-changelog = "First public release: right-click harvesting for 16 plant families, ordinary Horizon loot, paid replanting, retained bases and stems, and individual plant settings. Validated in single-player and for LAN host and guest."
+changelog = "First public release: right-click harvesting for 16 plant families, ordinary Curse loot, paid replanting, retained bases and stems, and individual plant settings. Validated in single-player and for LAN host and guest."

@@ -1,11 +1,11 @@
 id = "voltz_core"
 kind = "native-mod"
 name = "Voltz"
-summary = "Machines, power, pipes, a nuclear reactor, missiles, turrets and force fields: the classic Voltz tech pack remade for Horizon."
+summary = "Machines, power, pipes, a nuclear reactor, missiles, turrets and force fields: the classic Voltz tech pack remade for Curse."
 description = """
-**This mod has two parts, and you need both.** Install this one, the native part, and [Voltz (assets)](https://playhorizon.dev/mods/voltz), then press Build.
+**This mod has two parts, and you need both.** Install this one, the native part, and [Voltz (assets)](https://github.com/curse-rusts/curse-mods/blob/main/mods/voltz.toml), then press Build.
 
-Voltz is a big tech and explosives pack for Horizon, remade from the spirit of the classic Voltz modpack. It adds working machines, power, automation and weapons, each set in its own creative tab:
+Voltz is a big tech and explosives pack for Curse, remade from the spirit of the classic Voltz modpack. It adds working machines, power, automation and weapons, each set in its own creative tab:
 
 - **Power**: wire, coal, heat, wind, solar and geothermal generators, batteries and energy storage.
 - **Processing**: electric furnace, crusher, compressor, extractor, enrichment chamber, infuser, alloy smelter, SAG mill, smeltery, coke oven, blast furnace, centrifuge and more, with survival recipes.
@@ -15,9 +15,9 @@ Voltz is a big tech and explosives pack for Horizon, remade from the spirit of t
 - **Defence**: force field projector, four turrets, guns and ammo.
 - **Worldgen**: new ores, plus tools, armor and six chest tiers.
 
-Native source mod: install it on the launcher's Mods page, press Build there, and confirm the native-code warning. It runs with your account's permissions. It is pinned to one Horizon Nightly and Horizon Mixins revision.
+Native source mod: install it on the launcher's Mods page, press Build there, and confirm the native-code warning. It runs with your account's permissions. It is pinned to one Curse Nightly and Curse Mixins revision.
 
-**Credits.** All code and art here is new, written for Horizon. Nothing was copied or decompiled from another mod. It follows the gameplay of mods from the Voltz pack, and the full list with authors, licences and links is in [CREDITS.md](https://github.com/d3xc0/voltz-horizon/blob/main/CREDITS.md): Mekanism, ICBM Classic, Ender IO, Tinkers' Construct, BuildCraft, Applied Energistics 2, Iron Chests, IndustrialCraft 2, Railcraft, Atomic Science, Modular Force Field System, Open Modular Turrets and Techguns. Not affiliated with any of them.
+**Credits.** All code and art here is new, written for Curse. Nothing was copied or decompiled from another mod. It follows the gameplay of mods from the Voltz pack, and the full list with authors, licences and links is in [CREDITS.md](https://github.com/d3xc0/voltz-horizon/blob/main/CREDITS.md): Mekanism, ICBM Classic, Ender IO, Tinkers' Construct, BuildCraft, Applied Energistics 2, Iron Chests, IndustrialCraft 2, Railcraft, Atomic Science, Modular Force Field System, Open Modular Turrets and Techguns. Not affiliated with any of them.
 
 No Minecraft code or assets are included. MIT licensed."""
 authors = ["Arthur Black"]
@@ -35,4 +35,4 @@ published = "2026-11-06"
 game = "26.3"
 file = "voltz_core-0.3.0.hnmod"
 sha256 = "07671d2d8267871a88c4a78ebe890b7b3f63210345f1d889c7f348d317e8d5cf"
-changelog = "First release in the registry. Pinned to Horizon Nightly 66f3981 and Horizon Mixins e8cd0aa."
+changelog = "First release in the registry. Pinned to Curse Nightly 66f3981 and Curse Mixins e8cd0aa."

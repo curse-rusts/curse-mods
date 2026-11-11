@@ -3,7 +3,7 @@ kind = "native-mod"
 name = "Cinematic Interactions"
 summary = "Using a crafting table, furnace, anvil, enchanting table and more moves the camera in close for a cinematic, hands-on scene."
 description = """
-By tariksabanuz. Cinematic Interactions for Horizon, a port of Southware's Cinematic Interactions for Fabric: when you use a station,
+By tariksabanuz. Cinematic Interactions for Curse, a port of Southware's Cinematic Interactions for Fabric: when you use a station,
 the camera glides in and your hands work it in a close-up scene instead of opening a plain menu.
 
 - Crafting table, crafter, stonecutter, loom and cartography table, furnace, smoker, blast furnace and campfire.
@@ -31,4 +31,4 @@ sha256 = "b08c342aeca7d053705e2397cd6185f3239a5c51f962f129cea6f545eb293604"
 changelog = """
 - Station scenes with hands and camera, anvil hammer and grindstone, enchanting and beacon effects, move over between stations, settings screen.
 - Kept crafting-table items are saved atomically and are never lost or duplicated if the disk fails.
-- Built for the latest Horizon nightly (fdc87ae, Nov 8)."""
+- Built for the latest Curse nightly (fdc87ae, Nov 8)."""

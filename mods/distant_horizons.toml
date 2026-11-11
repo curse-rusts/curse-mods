@@ -1,6 +1,6 @@
 id = "distant_horizons"
 kind = "native-mod"
-name = "Distant Horizons for Horizon Client"
+name = "Distant Horizons for Curse Client"
 summary = "See far past your render distance: Distant Horizons' level-of-detail terrain, ported to Rust as a native mod."
 description = """
 An unofficial Rust port of [Distant Horizons](https://gitlab.com/distant-horizons-team/distant-horizons) by James Seibel and contributors: the world past your render distance, drawn at lower detail the farther it is.
@@ -8,13 +8,13 @@ An unofficial Rust port of [Distant Horizons](https://gitlab.com/distant-horizon
 - Far terrain built from the chunks you visit, and in single player from the world generator, out to 64–1024 chunks.
 - Detail drops with distance by Distant Horizons' own rule, with its five quality presets.
 - LODs are kept on disk per world, so they load at once next time.
-- Drawn by Horizon's far-terrain renderer with block textures and biome tints.
+- Drawn by Curse's far-terrain renderer with block textures and biome tints.
 
 Settings: Options > Mods > Distant Horizons. In chat: `/dh` for status, `/dh distance 512`, `/dh quality high`, `/dh debug on` and more (Tab completes them).
 
 Native source mod: install it on the launcher's Mods page, press Build there and confirm the native-code warning. The launcher downloads its own Rust and builds a separate game (10–30 minutes the first time). It runs with your account's permissions.
 
-Pinned to Horizon nightly `d009ebd140476b5bdc958c00f56a75e82abec691` (2026-10-29) and Horizon Mixins `0d6b103c70633d8fd9443d8d0acd3aadaacedb06`; the launcher builds these exact revisions. Other Horizon revisions have not been validated. It builds together with Horizon's official native mods; it can't be built with a native mod pinned to a different Horizon commit. Turn Video Settings > LOD Distance off: Horizon's own far terrain draws in the same place.
+Pinned to Curse nightly `d009ebd140476b5bdc958c00f56a75e82abec691` (2026-10-29) and Curse Mixins `0d6b103c70633d8fd9443d8d0acd3aadaacedb06`; the launcher builds these exact revisions. Other Curse revisions have not been validated. It builds together with Curse's official native mods; it can't be built with a native mod pinned to a different Curse commit. Turn Video Settings > LOD Distance off: Curse's own far terrain draws in the same place.
 
 Known limits: heavy at 256+ chunks (about 30–40 fps on an Apple M5 MacBook Pro); water at LOD edges can show see-through walls.
 
@@ -34,4 +34,4 @@ published = "2026-10-29"
 game = "26.3"
 file = "distant_horizons-0.1.0.hnmod"
 sha256 = "c53a2501f14efb624839329aac6999ddf8c64a399d41bec42a0c878902feea81"
-changelog = "First release: pinned to Horizon nightly d009ebd and Horizon Mixins 0d6b103."
+changelog = "First release: pinned to Curse nightly d009ebd and Curse Mixins 0d6b103."

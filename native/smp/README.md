@@ -274,15 +274,15 @@ the spawn.
 experience orb pickup sound to that player alone, and so does a `/msg`, `/tell` or `/w` to them; never the sender, at
 most once each 3 s per player. `/pingsound off` turns it off for oneself (`pings.json`), `/pingsound on` back.
 
-**The scoreboard.** A sidebar on the right, titled `board.title` ("Horizon SMP"): your own block first (your name, or
+**The scoreboard.** A sidebar on the right, titled `board.title` ("Curse SMP"): your own block first (your name, or
 your nickname; your balance, `125.4k`, `3.2M`; your playtime, `2h 05m`; the players online), then `board.footer`
-(`play.playhorizon.dev`, empty for none). It lists no ranking: `/baltop` does (`board.top`, of 0.14 to 0.29, is
+(empty for none). It lists no ranking: `/baltop` does (`board.top`, of 0.14 to 0.29, is
 ignored). The balances are read once for everyone, only when one changed (at most every `board.min_seconds`, 5) or
 every `board.refresh_seconds` (60); each player's own lines are looked at on the same `board.refresh_seconds`, and a
 sidebar is sent only to the players whose lines changed and to newcomers: nothing runs per tick per player. The Tab
 list shows `board.tab_header` and `board.tab_footer` (`{server}`, `{tps}`, `{players}` filled in, every
 `board.tab_refresh_seconds`, 5). `board.sidebar` and `board.tab` turn either off; `board.server_name` names the Tab
-list. A server that kept 0.13's title (`Richest players`) gets `Horizon SMP` at its first start. The
+list. A server that kept 0.13's title (`Richest players`) or the earlier `Horizon SMP` gets `Curse SMP` at its first start. The
 sidebar uses one scoreboard objective of its own (`horizon:native_sidebar`) and leaves the world's scoreboard alone.
 
 **Presence.** A player's first join is announced to everyone (`presence.first_join`, empty for none) and they read
@@ -422,3 +422,7 @@ NATIVE_NO_DEFAULT_FEATURES=1 python3 native/tools/native.py build smp --horizon 
 
 prints the built `horizon-client` (`--no-default-features`: the server build, without audio and controllers). When
 to deploy it on the official server is the owners' decision.
+
+`horizon-client`, `horizon-ctl`, `horizon-prepare`, `horizon-mods/`, `.horizon-mod-data` and `horizon-mods.txt`
+are the public mirror's names, which `native/tools/native.py` fetches and builds; the product is Curse, with
+`curse-client`, `curse-mods/` and `.curse-mod-data`.

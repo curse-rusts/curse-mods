@@ -3,9 +3,9 @@ kind = "native-mod"
 name = "Serverify"
 summary = "Find Minecraft servers and add them to your Multiplayer list, from a page in your web browser."
 description = """
-Serverify is a server browser. Press **F8** (or type `/serverify web`, or press the button on the mod's settings page) and your web browser opens a page with a search box, a category menu and cards showing each server's picture, address, player count and country. Press **Add** and the server goes to the top of your Multiplayer list. Then join it from Horizon's own Multiplayer screen.
+Serverify is a server browser. Press **F8** (or type `/serverify web`, or press the button on the mod's settings page) and your web browser opens a page with a search box, a category menu and cards showing each server's picture, address, player count and country. Press **Add** and the server goes to the top of your Multiplayer list. Then join it from Curse's own Multiplayer screen.
 
-It is the Horizon version of [Serverify](https://github.com/Louchatfroff/serverify), the server browser for Fabric, Quilt, Forge and NeoForge, by the same author.
+It is the Curse version of [Serverify](https://github.com/Louchatfroff/serverify), the server browser for Fabric, Quilt, Forge and NeoForge, by the same author.
 
 ## What it does
 
@@ -14,7 +14,7 @@ It is the Horizon version of [Serverify](https://github.com/Louchatfroff/serveri
 - Adds chat commands: `/serverify web`, `list [category]`, `search <words>`, `next`, `prev`, `add <number>` and `categories`.
 - Adds a row in Options > Mods with a rebindable key (F8 by default) and a settings page with two buttons: open the browser, and **Offline-mode servers only** (on by default).
 
-Horizon joins servers that check Minecraft accounts with your Microsoft sign-in, like the official launcher. This version still turns the offline-mode filter on by default, from a time when Horizon couldn't: turn it off to see all servers.
+Curse joins servers that check Minecraft accounts with your Microsoft sign-in, like the official launcher. This version still turns the offline-mode filter on by default, from a time when Curse couldn't: turn it off to see all servers.
 
 ## What it contacts
 
@@ -26,10 +26,10 @@ Horizon joins servers that check Minecraft accounts with your Microsoft sign-in,
 ## What it does not do
 
 - It does not run any code from the sites it reads, and it does not send your data anywhere.
-- It does not change anything but `servers.dat` (one entry at a time) and its own settings in `horizon-mods/.horizon-mod-data/serverify/`.
-- It does not draw screens or buttons in the game: Horizon's hook points have none, so the screen is your web browser.
-- It cannot make Horizon join servers that check Minecraft accounts.
-- Adding a server rewrites `servers.dat`, which drops the hidden direct-join entries Horizon keeps. Your saved servers stay.
+- It does not change anything but `servers.dat` (one entry at a time) and its own settings in `curse-mods/.curse-mod-data/serverify/`.
+- It does not draw screens or buttons in the game: Curse's hook points have none, so the screen is your web browser.
+- It cannot make Curse join servers that check Minecraft accounts.
+- Adding a server rewrites `servers.dat`, which drops the hidden direct-join entries Curse keeps. Your saved servers stay.
 
 ## Install
 
@@ -52,8 +52,8 @@ game = "26.3"
 file = "serverify-0.1.0.hnmod"
 sha256 = "f9ad0777f8fc7ea532f799da8a9eb72df2348c8d6bb5dc104f81b6ab47209501"
 changelog = """
-First release for Horizon, ported from the Java Edition mod of the same name.
+First release for Curse, ported from the Java Edition mod of the same name.
 
 - A server browser page in your web browser (F8, `/serverify web`, or the settings button).
 - Chat commands to list, search and add servers.
-- An offline-mode filter, on by default, because Horizon cannot join servers that check Minecraft accounts yet."""
+- An offline-mode filter, on by default, because Curse cannot join servers that check Minecraft accounts yet."""

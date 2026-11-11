@@ -3,7 +3,7 @@ kind = "native-mod"
 name = "First-person Model"
 summary = "A port of First-person Model: see your own body in first person, with offsets for every pose and the original's settings."
 description = """
-A port of [First-person Model](https://github.com/tr7zw/FirstPersonModel) by tr7zw to Horizon, as a native mod. You see your own third-person body in first person.
+A port of [First-person Model](https://github.com/tr7zw/FirstPersonModel) by tr7zw to Curse, as a native mod. You see your own third-person body in first person.
 
 - **Your body in first person**, head hidden, with your armour, cape, elytra, held items, parrots, arrows and fire.
 - **Offsets for every pose**: standing, sneaking, sitting (boats, minecarts, mounts), crawling and swimming; the standing, sneaking and sitting offsets can be changed.
@@ -11,7 +11,7 @@ A port of [First-person Model](https://github.com/tr7zw/FirstPersonModel) by tr7
 - **F6** turns it on and off.
 - **The original's config screen** (four tabs, sliders, item lists with search), from Mod Menu's Configure or Options > Mods > FirstPerson. English and Russian.
 
-Built for Horizon Nightly 2026-11-07 (`2ebf00a`). Native mods are compiled into the game and are not sandboxed: build only code you trust.
+Built for Curse Nightly 2026-11-07 (`2ebf00a`). Native mods are compiled into the game and are not sandboxed: build only code you trust.
 
 **Credits.** First-person Model is Copyright (c) tr7zw, MIT License, with its MIT TRender GUI. This port rewrites it in Rust under the same licence and is not affiliated with tr7zw, Mojang or Microsoft."""
 authors = ["DeportedToHell"]

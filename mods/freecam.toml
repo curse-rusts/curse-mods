@@ -1,9 +1,9 @@
 id = "freecam"
 kind = "native-mod"
 name = "Freecam"
-summary = "Freecam mod ported for Horizon"
+summary = "Freecam mod ported for Curse"
 description = """
-Control your camera separately from your player: a rewrite for Horizon, as a native mod, of the
+Control your camera separately from your player: a rewrite for Curse, as a native mod, of the
 [Freecam](https://github.com/MinecraftFreecam/Freecam) mod by the Freecam authors (MIT; its licence notice is kept in
 the source).
 

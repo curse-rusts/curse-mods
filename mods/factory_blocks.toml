@@ -1,10 +1,10 @@
 id = "factory_blocks"
 kind = "mod"
 name = "Factory Blocks"
-summary = "49 industrial decorative blocks — panels, grates, vents, pipes and hazard stripes — for Horizon."
+summary = "49 industrial decorative blocks — panels, grates, vents, pipes and hazard stripes — for Curse."
 description = """
 A port of [Factory Blocks](https://github.com/matthewperiut/factory_blocks) by
-slaincow for Horizon: 49 industrial decorative blocks — factory panels, grating,
+slaincow for Curse: 49 industrial decorative blocks — factory panels, grating,
 vents, pipes, hazard stripes, riveted plates and machinery faces.
 
 - Craft them from the mod's own recipes and build with them; every block is a

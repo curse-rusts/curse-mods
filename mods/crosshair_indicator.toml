@@ -3,7 +3,7 @@ kind = "native-mod"
 name = "Crosshair Indicator"
 summary = "Dynamic target reach awareness: visual feedback on your crosshair when hovering over an entity in attack range."
 description = """
-A port of the Java Crosshair Indicator mod (AmerDz01) for Horizon, as a native mod: your crosshair tells you
+A port of the Java Crosshair Indicator mod (AmerDz01) for Curse, as a native mod: your crosshair tells you
 when the mob or player you aim at is within attack reach (3 blocks).
 
 - **Four styles**: corner brackets around the crosshair (the default), a centre dot, diamond pips, or a chevron above
@@ -35,4 +35,4 @@ untrusted comment: signature from minisign secret key\r
 RUS411U2KXdTNz67XDjUwaJ8if7+jDk+qXnJLdhtyjh8mk04UuZ2bme/Tzcpi1Od4ppYmvqzfZ+rEAeG2hb9Lytn+J2nFy1u8gc=\r
 trusted comment: timestamp:1793461576\tfile:crosshair_indicator-1.0.0.hnmod\thashed\r
 zF7EJHDjJPwVG+cYcSgvGJv4kjjYRMdMZipUQyABH0DEMIZ2Fe13hb2nbYYRZlNDG1j4kjhgEYQTODFiAlaCBQ=="""
-changelog = "Initial release for 26.3 Horizon."
+changelog = "Initial release for 26.3 Curse."

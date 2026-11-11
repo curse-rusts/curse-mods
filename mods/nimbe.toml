@@ -3,7 +3,7 @@ kind = "shader"
 name = "Nimbe"
 summary = "A bright, enchanting world: painted sky, volumetric clouds, sunbeams, soft shadows, living water and colored lights."
 description = """
-An original shader pack written in Horizon's own WGSL shader format (shader API 0.1).
+An original shader pack written in Curse's own WGSL shader format (shader API 0.1).
 
 - **Painted sky**: the gradient changes through the day, with a pink band at sunrise and sunset and a halo around the sun.
 - **Clouds**: sunlit cumulus with self-shadowing, glowing edges against the light and darker bases, high cirrus, and a full overcast during storms.

@@ -1,9 +1,9 @@
 id = "smoothie_capes"
 kind = "native-mod"
 name = "Smoothie Capes"
-summary = "An Wavey Capes inspired mod for Horizon"
+summary = "An Wavey Capes inspired mod for Curse"
 description = """
-Capes that move like cloth, as a native mod for Horizon inspired by Wavey Capes.
+Capes that move like cloth, as a native mod for Curse inspired by Wavey Capes.
 
 It replaces how the game draws capes: each cape becomes a strip of 17 linked segments simulated every frame, so it
 trails out behind you when you run, swings to the side when you strafe or turn, lifts when you fall, and sways gently

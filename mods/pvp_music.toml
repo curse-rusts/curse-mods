@@ -1,10 +1,10 @@
-## Horizon registry entry for PVP Music (port of the Modrinth project PvP Music, Tkf0xIjA).
+## Curse registry entry for PVP Music (port of the Modrinth project PvP Music, Tkf0xIjA).
 id = "pvp_music"
 kind = "native-mod"
 name = "PVP Music"
 summary = "Battle music during combat: fades, death fades and the phased two-half track switch, the original's behavior kept."
 description = """
-**A native Horizon mod**: the launcher builds it into the game (install it on the launcher's Mods page, then press Build there). Native mods are not sandboxed and run with your account's rights, so read the source before you build it. Pinned to the Horizon tree this was built against.
+**A native Curse mod**: the launcher builds it into the game (install it on the launcher's Mods page, then press Build there). Native mods are not sandboxed and run with your account's rights, so read the source before you build it. Pinned to the Curse tree this was built against.
 
 - Mutual-combat detection: attacks on and by players and mobs are remembered for 5 s; a mob we hit that then hits us starts a mob battle.
 - A landed hit on a player starts a player battle; explosion and bad-respawn-point hurts pull in combat within 12 blocks; a wither within 30 blocks starts a fight.
@@ -13,7 +13,7 @@ description = """
 
 Sounds: the `.hnmod` carries code only, so the four tracks ship as a companion resource pack on the same release (`pvp-music-sounds-1.2.0.zip`, the original's CC0 assets). Install it as a resource pack and the music plays; without it the mod is silent.
 
-Port of [PvP Music](https://modrinth.com/mod/Tkf0xIjA) by Countered (CC0-1.0); credited upstream, original license preserved. The sound-asset gap is documented in the port README and tracked on horizon-rust/horizon.
+Port of [PvP Music](https://modrinth.com/mod/Tkf0xIjA) by Countered (CC0-1.0); credited upstream, original license preserved. The sound-asset gap is documented in the port README and tracked on curse-rusts/curse-rust.
 """
 authors = ["sparticle62ops"]
 owners = ["sparticle62ops"]

@@ -1,7 +1,7 @@
 id = "inventory_wizard"
 kind = "native-mod"
 name = "InventoryWizard"
-summary = "InventoryWizard's one-click sorting as a native mod for Horizon"
+summary = "InventoryWizard's one-click sorting as a native mod for Curse"
 description = """
 ## Features
 
@@ -39,4 +39,4 @@ untrusted comment: signature from minisign secret key\r
 RUTos7ZtiqwDTmRp04qx/n5ZXozvaeOig3nJZFeNqmfmZ1PjB/2JUcfiF0JLZZJBkqpwm6sZQAvrt4HNce0juB5KaxJUOQJtAAo=\r
 trusted comment: timestamp:1793498930\tfile:inventory_wizard-2.3.3.hnmod\thashed\r
 Q0SE4CMnaFQHCmizFD0JcIPkUfiYQVs3KyGCCpS99m3OfFNhnS0gQt20ul0QlyYDAC8bAPJRjyrSIgcD1KzPAQ=="""
-changelog = "Full native port of InventoryWizard for Horizon "
+changelog = "Full native port of InventoryWizard for Curse "

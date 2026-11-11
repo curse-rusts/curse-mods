@@ -1,11 +1,11 @@
 id = "freecam_yannis"
 kind = "native-mod"
 name = "FreeCam"
-summary = "Free camera, F6 follow view and nine tripod positions for Horizon."
+summary = "Free camera, F6 follow view and nine tripod positions for Curse."
 description = """
 ## FreeCam by Yannis_
 
-Free flight, a high and wide follow view, and nine tripod positions — now native to Horizon.
+Free flight, a high and wide follow view, and nine tripod positions — now native to Curse.
 
 ### Controls
 
@@ -16,21 +16,21 @@ Free flight, a high and wide follow view, and nine tripod positions — now nati
 
 ### Original Modrinth project
 
-This is the native Rust edition of [FreeCam by Yannis_ on Modrinth](https://modrinth.com/mod/freecam_yannis_) (project ID: `zHbMgWKx`). Use the Modrinth edition with Java/Fabric and this native edition with Horizon. Both use the same existing FreeCam artwork.
+This is the native Rust edition of [FreeCam by Yannis_ on Modrinth](https://modrinth.com/mod/freecam_yannis_) (project ID: `zHbMgWKx`). Use the Modrinth edition with Java/Fabric and this native edition with Curse. Both use the same existing FreeCam artwork.
 
-The Java edition originated from [MinecraftFreecam/Freecam](https://github.com/MinecraftFreecam/Freecam) and its contributors. Original MIT notices are retained in the repository and bundle. This is an independently maintained port, not an official release of MinecraftFreecam or Horizon.
+The Java edition originated from [MinecraftFreecam/Freecam](https://github.com/MinecraftFreecam/Freecam) and its contributors. Original MIT notices are retained in the repository and bundle. This is an independently maintained port, not an official release of MinecraftFreecam or Curse.
 
 ### Compatibility and scope
 
-For Minecraft 26.3 and Horizon commit `2ebf00a0281c592f79191e76fce0e7d522c6f425`. Two internal hooks provide independent mouse look and player-body visibility, so this release requires that pinned Horizon revision.
+For Minecraft 26.3 and Curse commit `2ebf00a0281c592f79191e76fce0e7d522c6f425`. Two internal hooks provide independent mouse look and player-body visibility, so this release requires that pinned Curse revision.
 
 The camera only shows chunks already loaded around the player. Free flight passes through blocks and suppresses player movement input and block interactions; follow mode leaves player controls active. World unload and disconnect clear camera state.
 
-No networking, telemetry, background threads, obstruction hiding, block scanning or chunk rebuilding. Settings use Horizon’s local storage. Optional Java collision, fullbright, fog and hand-display settings are not included in this first port.
+No networking, telemetry, background threads, obstruction hiding, block scanning or chunk rebuilding. Settings use Curse’s local storage. Optional Java collision, fullbright, fog and hand-display settings are not included in this first port.
 
 ### Validation
 
-13 distinct core/adapter tests, the full Horizon native build check, and official package validation pass. GitHub CI also passes. Interactive Horizon-world testing and performance measurements remain pending; this is a preview release. [Validation details](https://github.com/yan6678yan-design/freecam-horizon/blob/main/VALIDATION.md).
+13 distinct core/adapter tests, the full Curse native build check, and official package validation pass. GitHub CI also passes. Interactive Curse-world testing and performance measurements remain pending; this is a preview release. [Validation details](https://github.com/yan6678yan-design/freecam-horizon/blob/main/VALIDATION.md).
 
 Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft."""
 authors = ["Yannis_"]
@@ -48,4 +48,4 @@ published = "2026-11-08"
 game = "26.3"
 file = "freecam_yannis-1.0.1.hnmod"
 sha256 = "97b727405c8aeef6d7865701fc7fda4f52fe61549a47125e6b6244c7872e161c"
-changelog = "Initial native Horizon release: F4 free flight, F6 follow camera, nine tripod slots and persistent speed/distance/height settings. Version 1.0.1 hides the crosshair in F6 follow view and restores normal crosshair rendering on exit. No obstruction hiding."
+changelog = "Initial native Curse release: F4 free flight, F6 follow camera, nine tripod slots and persistent speed/distance/height settings. Version 1.0.1 hides the crosshair in F6 follow view and restores normal crosshair rendering on exit. No obstruction hiding."

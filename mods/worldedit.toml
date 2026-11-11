@@ -3,7 +3,7 @@ kind = "native-mod"
 name = "WorldEdit"
 summary = "working port of java world edit"
 description = """
-The WorldEdit editor as a native mod for Horizon: select a region and fill, replace, shape, copy and paste
+The WorldEdit editor as a native mod for Curse: select a region and fill, replace, shape, copy and paste
 it with `//` commands, and load or save schematics. It writes blocks through the game's own code, with no command
 length limit, in single player and on a LAN world you host or join.
 

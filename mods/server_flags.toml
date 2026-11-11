@@ -14,11 +14,11 @@ Settings in Options > Mods > Server Flags: lookups on/off, flag position, hover 
 
 **Privacy:** to know where a server is, the mod resolves its address and sends only that IP address to https://api.country.is (open source, no account or key), which answers with a country code. Once per server per game session, in the background, only while "Look up server locations" is on. Nothing about you, your account or your other servers is sent; with the setting off, nothing is sent at all.
 
-Horizon has no hook point for the server list, so besides hook points this mod hooks the list's own tooltip pass (Screen::draw_tooltip in multiplayer.rs) and lays the flags out as the list lays out its rows. A later Horizon that changes the server list needs an update of this mod.
+Curse has no hook point for the server list, so besides hook points this mod hooks the list's own tooltip pass (Screen::draw_tooltip in multiplayer.rs) and lays the flags out as the list lays out its rows. A later Curse that changes the server list needs an update of this mod.
 
 Source: https://github.com/selfmonoraque5/server-flags
 
-Inspired by Server Country Flags by Khajiitos (https://modrinth.com/mod/server-country-flags). Written from scratch for Horizon: it contains none of its code or images (the flags are drawn in code) and is not made or endorsed by Khajiitos. Locations by country.is."""
+Inspired by Server Country Flags by Khajiitos (https://modrinth.com/mod/server-country-flags). Written from scratch for Curse: it contains none of its code or images (the flags are drawn in code) and is not made or endorsed by Khajiitos. Locations by country.is."""
 authors = ["selfmonoraque5"]
 owners = ["selfmonoraque5"]
 owner_ids = [86315101]

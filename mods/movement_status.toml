@@ -5,7 +5,7 @@ summary = "Better toggle Sprint/Sneak display functionality"
 description = """
 # Movement Status
 
-A lightweight native HUD for Horizon that shows your current movement state in the corner of the screen.
+A lightweight native HUD for Curse that shows your current movement state in the corner of the screen.
 
 It reads the live player state (sprinting, sneaking, flying, elytra gliding) and the physical vs. logical key state so it can correctly distinguish between a key that is being held and a key that is toggled via vanilla’s Toggle Sprint / Toggle Crouch options.
 
@@ -22,12 +22,12 @@ It reads the live player state (sprinting, sneaking, flying, elytra gliding) and
 
 ## Requirements
 
-- Horizon (Minecraft: Java Edition 26.3)
+- Curse (Minecraft: Java Edition 26.3)
 - Native mod support enabled in the launcher
 
 ## Installation
 
-1. Install the mod from the launcher’s Mods page (or drop the `.hnmod` into `horizon-native-mods/`).
+1. Install the mod from the launcher’s Mods page (or drop the `.hnmod` into `curse-native-mods/`).
 2. Click **Build** and confirm the native-code warning.
 3. Once built, turn the mod on under Options → Mods.
 

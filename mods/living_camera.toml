@@ -19,7 +19,7 @@ Client side only: it works in single player and on any server. It reads only you
 
 Source: https://github.com/selfmonoraque5/living-camera
 
-Inspired by Camera Overhaul by Mirsario (https://github.com/Mirsario/Minecraft-CameraOverhaul). Written from scratch for Horizon: it contains none of Camera Overhaul's code or assets and is not made or endorsed by Mirsario."""
+Inspired by Camera Overhaul by Mirsario (https://github.com/Mirsario/Minecraft-CameraOverhaul). Written from scratch for Curse: it contains none of Camera Overhaul's code or assets and is not made or endorsed by Mirsario."""
 authors = ["selfmonoraque5"]
 owners = ["selfmonoraque5"]
 owner_ids = [86315101]

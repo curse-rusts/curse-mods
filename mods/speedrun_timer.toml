@@ -4,7 +4,7 @@ name = "Speedrun Timer"
 summary = "Speedrun Timer Is a mod made to count the time it took you to beat the Game"
 description = """
 An RTA speedrun timer in a corner of the screen, `HH:MM:SS.mmm` with live milliseconds, as a native mod for
-Horizon.
+Curse.
 
 - **Starts** on your first move after a world loads, and **stops** when you take the exit portal back from the End.
   Dying is not a finish: the run keeps counting.

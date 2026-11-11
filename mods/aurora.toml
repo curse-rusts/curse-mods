@@ -1,8 +1,8 @@
 id = "aurora"
 kind = "shader"
-name = "Aurora Shaders Horizon"
-summary = "A shader pack for Horizon, written against Horizon's native shader API 0.1"
-description = "Aurora brings a full desktop-style shader pipeline to Horizon: real-time shadows, volumetric light shafts, water, clouds, lens flare and HDR emissive lighting. Its GLSL source is translated to WGSL, with adapters that emulate the Iris pipeline inside Horizon."
+name = "Aurora Shaders Curse"
+summary = "A shader pack for Curse, written against Curse's native shader API 0.1"
+description = "Aurora brings a full desktop-style shader pipeline to Curse: real-time shadows, volumetric light shafts, water, clouds, lens flare and HDR emissive lighting. Its GLSL source is translated to WGSL, with adapters that emulate the Iris pipeline inside Curse."
 authors = ["iLoong"]
 owners = ["tomasmendes01"]
 owner_ids = [68385376]

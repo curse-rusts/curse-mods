@@ -1,15 +1,15 @@
-## Horizon registry entry for Fast Trading (port of bendy1234/FastTrading).
+## Curse registry entry for Fast Trading (port of bendy1234/FastTrading).
 id = "fast_trading"
 kind = "native-mod"
 name = "Fast Trading"
 summary = "A speed-trade button on the merchant screen repeats the selected trade as fast as the settings allow."
 description = """
-**A native Horizon mod**: the launcher builds it into the game (install it on the launchers Mods page, then press Build there). Native mods are not sandboxed and run with your accounts rights, so read the source before you build it. Pinned to the Horizon tree this was built against.
+**A native Curse mod**: the launcher builds it into the game (install it on the launchers Mods page, then press Build there). Native mods are not sandboxed and run with your accounts rights, so read the source before you build it. Pinned to the Curse tree this was built against.
 
 - Speed trade button on the merchant screen repeats the selected trade quickly.
 - Settings control how fast it repeats; a command opens the controls.
 
-Port of [FastTrading](https://github.com/bendy1234/FastTrading) by bendy1234 (MIT); credited upstream, original license preserved. Feature gaps vs upstream are documented in the port README and tracked on horizon-rust/horizon.
+Port of [FastTrading](https://github.com/bendy1234/FastTrading) by bendy1234 (MIT); credited upstream, original license preserved. Feature gaps vs upstream are documented in the port README and tracked on curse-rusts/curse-rust.
 """
 authors = ["sparticle62ops"]
 owners = ["sparticle62ops"]

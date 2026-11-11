@@ -4,7 +4,7 @@ name = "Armor HUD"
 summary = "Your worn armor and its durability in a column left to the off-hand slot."
 description = """
 Your worn armor and its durability in a column of four slots left of the hotbar's off-hand slot, as a
-native mod for Horizon.
+native mod for Curse.
 
 - **Durability numbers**: press **K** (rebindable in Options > Mods) to show or hide them; a notice above the
   hotbar says which. Off by default.

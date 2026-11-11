@@ -4,7 +4,7 @@ name = "I'm Fast"
 summary = "Removes Minecraft's server-side player and elytra movement limits."
 description = """
 A port of [I'm Fast](https://github.com/Gabriel-Hiss/Im-Fast) by Gabriel Hiss for
-Horizon: it lifts the server-side movement checks that pull a player back for
+Curse: it lifts the server-side movement checks that pull a player back for
 "moved too quickly".
 
 **Implemented so far**
@@ -17,11 +17,11 @@ Horizon: it lifts the server-side movement checks that pull a player back for
 **Not yet ported**
 
 - The two "moved wrongly" thresholds (player and vehicle) and the vehicle speed
-  limit: Horizon has no rule for them, and the hooks that could patch them are
+  limit: Curse has no rule for them, and the hooks that could patch them are
   not stamped yet.
 
 Original copyright and licence notices are kept in this repository. Pinned to
-Horizon 1d63e0a and horizon-mixins 5a64af93. Help with the remaining thresholds
+Curse 1d63e0a and horizon-mixins 5a64af93. Help with the remaining thresholds
 is welcome.
 """
 authors = ["Gabriel Hiss", "AdLf0208"]

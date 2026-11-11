@@ -1,9 +1,9 @@
 id = "fast_items"
 kind = "native-mod"
-name = "Fast Items for Horizon"
+name = "Fast Items for Curse"
 summary = "Optimize item rendering by transforming item entities to 2D"
 description = """
-Flat, camera-facing dropped items for Horizon, as a native mod inspired by Noryea's
+Flat, camera-facing dropped items for Curse, as a native mod inspired by Noryea's
 [Fast Items](https://modrinth.com/mod/fast-items) (independently written; no code from it).
 
 - **Flat items** (potions, tools...): the sprite's edges and hidden back face are dropped, so each layer is one flat

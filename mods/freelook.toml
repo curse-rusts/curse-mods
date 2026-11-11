@@ -7,7 +7,7 @@ Hold **X** (rebindable in Options > Mods) for a third-person view you can look a
 character keeps walking and facing the way it was. Let go and the camera goes back to what it was.
 
 Scroll while holding the key to move the camera closer or farther, from 1 to 24 blocks (the game's own third person
-is 4). A native mod for Horizon, in the spirit of the Freelook and Perspective mods."""
+is 4). A native mod for Curse, in the spirit of the Freelook and Perspective mods."""
 authors = ["Krzysix17"]
 owners = ["Krzysix17"]
 owner_ids = [350813197]

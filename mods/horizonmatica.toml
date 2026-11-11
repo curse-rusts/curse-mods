@@ -1,12 +1,12 @@
 id = "horizonmatica"
 kind = "native-mod"
-name = "Horizonmatica"
-summary = "Litematica for Horizon: schematics as ghost blocks, a verifier, material lists and a printer that builds the missing blocks for you."
+name = "Cursematica"
+summary = "Litematica for Curse: schematics as ghost blocks, a verifier, material lists and a printer that builds the missing blocks for you."
 description = """
-Horizonmatica is a re-creation of **Litematica** (with its **printer**) for Horizon. Load a schematic, see it as ghost blocks in your world, check your build against it, get a material list, and let the printer place the missing blocks.
+Cursematica is a re-creation of **Litematica** (with its **printer**) for Curse. Load a schematic, see it as ghost blocks in your world, check your build against it, get a material list, and let the printer place the missing blocks.
 
 ## Features
-- **Formats:** `.litematic` (versions 1–7, several regions), `.schem` (Sponge v1–v3: WorldEdit, FAWE, Amulet, Axiom), `.schematic` (MCEdit / WorldEdit up to 1.12) and vanilla structure `.nbt`. Older files are upgraded with Horizon's data fixer, the same way old worlds are.
+- **Formats:** `.litematic` (versions 1–7, several regions), `.schem` (Sponge v1–v3: WorldEdit, FAWE, Amulet, Axiom), `.schematic` (MCEdit / WorldEdit up to 1.12) and vanilla structure `.nbt`. Older files are upgraded with Curse's data fixer, the same way old worlds are.
 - **Overlay:** missing blocks as translucent real block models (chests, banners, heads and other block entities included), optionally visible through walls.
 - **Verifier:** wrong block (red), wrong state (orange), extra block (pink), plus a progress HUD.
 - **Layers:** all / one layer / above / below / range.
@@ -16,23 +16,23 @@ Horizonmatica is a re-creation of **Litematica** (with its **printer**) for Hori
 - **Menu (M):** a screen of its own, drawn with the game's widgets.
 - **Pick block:** middle-click a ghost block to take that block in hand, for building by hand.
 - **Highlights:** mark missing and wrong blocks through everything, however far away, for all items or just one you pick in the material list.
-- **Printer:** places one missing block within reach every few ticks, from the bottom up. It only clicks when Horizon's own placement logic says the click produces exactly the wanted state (stairs, slabs, logs, furnaces…). Redstone-aware order, repeater, comparator and note block setup after placing, double slabs and stacks, chests, falling blocks. The camera never moves.
+- **Printer:** places one missing block within reach every few ticks, from the bottom up. It only clicks when Curse's own placement logic says the click produces exactly the wanted state (stairs, slabs, logs, furnaces…). Redstone-aware order, repeater, comparator and note block setup after placing, double slabs and stacks, chests, falling blocks. The camera never moves.
 
 Usage: put schematics into `schematics/` next to `options.txt` of your instance (`/hm folder` shows the path), then `/hm load <name>` or press **M**. All commands and keys are in the [README](https://github.com/keksi2k/horizonmatica#usage).
 
 ## What it does and doesn't do
 - **Reads** only files in the instance's `schematics/` folder, and creates that folder if it's missing.
-- **Writes** only the `.litematic` files you save (`/hm save`), into that folder. Settings and remembered placements go through Horizon's mod settings.
+- **Writes** only the `.litematic` files you save (`/hm save`), into that folder. Settings and remembered placements go through Curse's mod settings.
 - **Network:** no connections of its own. The only thing sent to a server is what the printer does: the same block-placing clicks a player would make (with the matching look direction), and hotbar slot changes.
-- **"Open folder"** in the menu opens the schematics folder in your file manager through Horizon's own function.
+- **"Open folder"** in the menu opens the schematics folder in your file manager through Curse's own function.
 - No telemetry, no downloads, no code run from schematic files. Schematics are parsed as data only.
 
 ⚠️ On other people's servers, automatic placing may break the rules or trip anti-cheat. The printer is off until you turn it on (`K` or `/hm printer on`). Its *air place* option (off by default) is noticed by anti-cheat plugins such as Grim.
 
-**Version:** native mods use game internals, so Horizonmatica is pinned to one Horizon commit (currently Nightly 2026-11-04, `67dad0d`). A new Nightly needs a new release.
+**Version:** native mods use game internals, so Cursematica is pinned to one Curse commit (currently Nightly 2026-11-04, `67dad0d`). A new Nightly needs a new release.
 
 ## Credits
-The idea, the way it's used, the file format and the behaviour come from **[Litematica](https://github.com/maruohon/litematica)** by masa (maruohon), maintained by **[Sakura-Ryoko](https://github.com/sakura-ryoko/litematica)**, and from **[Litematica Printer](https://github.com/aleksilassila/litematica-printer)** by aleksilassila. Horizonmatica is not an official project of these authors, isn't made or endorsed by them, and contains none of their code. Only the file format and the behaviour are re-created. If you like it, go and support the originals.
+The idea, the way it's used, the file format and the behaviour come from **[Litematica](https://github.com/maruohon/litematica)** by masa (maruohon), maintained by **[Sakura-Ryoko](https://github.com/sakura-ryoko/litematica)**, and from **[Litematica Printer](https://github.com/aleksilassila/litematica-printer)** by aleksilassila. Cursematica is not an official project of these authors, isn't made or endorsed by them, and contains none of their code. Only the file format and the behaviour are re-created. If you like it, go and support the originals.
 
 Menus built with [horizon-menus](https://github.com/keksi2k/horizon-menus). MIT licensed.
 """
@@ -63,7 +63,7 @@ changelog = """
 - Keys tab: bind any action to a key, including ones that had no key before: rotate, mirror, move to me, show or hide, select, unload, area corners and more.
 
 ### Changed
-- Pinned to Horizon Nightly 2026-11-08 (fdc87ae): two hook targets moved there (`play_mouse` to `game/play_input.rs`, `pauses_game` to `game/pointer_capture.rs`).
+- Pinned to Curse Nightly 2026-11-08 (fdc87ae): two hook targets moved there (`play_mouse` to `game/play_input.rs`, `pauses_game` to `game/pointer_capture.rs`).
 - Keys are bound on the Keys tab, no longer in Options > Mods. Keys you changed there are kept as the starting point.
 - Credits moved from a tab to a button at the top left of the menu.
 
@@ -75,7 +75,7 @@ changelog = """
 - At 720p the lower rows of the Placement tab ran under "Done"; that side now scrolls.
 - A printer click on a server no longer counts as a click of the selection tool when the tool is in hand.
 
-Built for Horizon Nightly 2026-11-08 (fdc87ae)."""
+Built for Curse Nightly 2026-11-08 (fdc87ae)."""
 
 [[versions]]
 version = "0.2.0"
@@ -107,7 +107,7 @@ changelog = """
 ### Fixed
 - The printer places bamboo, crops, stems, berry bushes and vines. They count as correct at any stage of growth, and the material list includes them.
 
-Built for Horizon Nightly 2026-11-04 (67dad0d, hook API 359)."""
+Built for Curse Nightly 2026-11-04 (67dad0d, hook API 359)."""
 
 [[versions]]
 version = "0.1.1"
@@ -123,7 +123,7 @@ BmryY+OjbG0qZnnFappBEO2tR8zx+a5BmqBFA4AVytjqvLnuvDWYE0PUwZLLodqbN218NM0JluVGpstn
 changelog = """
 First release in the registry.
 
-- Loads .litematic, .schem (Sponge v1–v3), .schematic (MCEdit, 1.12 ids) and structure .nbt; older files are upgraded with Horizon's data fixer
+- Loads .litematic, .schem (Sponge v1–v3), .schematic (MCEdit, 1.12 ids) and structure .nbt; older files are upgraded with Curse's data fixer
 - Ghost overlay with real block models, see-through mode, verifier colours and layer modes
 - Placements remembered per world and dimension; move mode, rotate, mirror
 - Own menu screen (M) and a material list with item icons
@@ -131,4 +131,4 @@ First release in the registry.
 
 Since 0.1.0 on GitHub: loading another schematic no longer shows the previous one's blocks.
 
-Built for Horizon Nightly 2026-11-01 (c9d474d, hook API 80)."""
+Built for Curse Nightly 2026-11-01 (c9d474d, hook API 80)."""

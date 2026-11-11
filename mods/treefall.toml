@@ -3,7 +3,7 @@ kind = "native-mod"
 name = "TreeFall"
 summary = "Cut one log of a natural tree with an axe and the whole tree comes down."
 description = """
-**A native Horizon mod** (built into the game by the launcher; native mods are not sandboxed, so read the source before you build it).
+**A native Curse mod** (built into the game by the launcher; native mods are not sandboxed, so read the source before you build it).
 
 Cut one log of a natural tree with an axe and the whole tree comes down. Every log is broken through the game's ordinary mining path, so drops, statistics, hunger and axe wear are exactly as if you had chopped each log yourself.
 
@@ -11,7 +11,7 @@ Cut one log of a natural tree with an axe and the whole tree comes down. Every l
 - **Settings page** (Options > Mods > TreeFall): which tools fell (axe / any tool / anything), sneaking, largest tree, leaves needed, cut time (as one log, or longer for bigger trees), tool wear (every log / once / a factor / none), keep durability, hunger, drops at the stump, replant a sapling, break the leaves, huge mushrooms.
 - `/treefall` on/off per player; LAN guests too.
 
-In the spirit of FallingTree; not affiliated, no code from it. Pinned to Horizon 142388e and horizon-mixins 0d6b103."""
+In the spirit of FallingTree; not affiliated, no code from it. Pinned to Curse 142388e and horizon-mixins 0d6b103."""
 authors = ["d3grando"]
 owners = ["d3grando"]
 owner_ids = [36463198]

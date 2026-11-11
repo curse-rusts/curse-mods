@@ -3,7 +3,7 @@ kind = "shader"
 name = "Pastel Mystic"
 summary = "A soft pastel, dreamlike world with auroras, lavender mist and a breathing light from what you hold."
 description = """
-A soft pastel, dreamlike shader pack in Horizon's own format, written from scratch in WGSL.
+A soft pastel, dreamlike shader pack in Curse's own format, written from scratch in WGSL.
 
 - **Pastel sky:** periwinkle overhead and blush at the horizon by day, coral and lilac at dawn and dusk.
 - **Mystic nights:** a deep violet sky with a slowly drifting aurora curtain in mint, lavender and pink, and twinkling stars.
@@ -13,7 +13,7 @@ A soft pastel, dreamlike shader pack in Horizon's own format, written from scrat
 - **Pastel grade:** lifted lavender shadows, blush highlights, softer contrast and a violet vignette.
 - Plants sway in a slow breeze, water is a clear pastel aqua with gentle waves, fireflies glow lilac.
 
-Everything is adjustable in Options > Horizon Settings > Shader Packs > Shader Options (Light, Light in hand, Sky, Mist, Dream). Kept light for integrated graphics (tested on Intel Iris Xe): no reflections pass, a small shadow map and quarter-resolution glow."""
+Everything is adjustable in Options > Curse Settings > Shader Packs > Shader Options (Light, Light in hand, Sky, Mist, Dream). Kept light for integrated graphics (tested on Intel Iris Xe): no reflections pass, a small shadow map and quarter-resolution glow."""
 authors = ["palladium7048"]
 owners = ["platinum7048"]
 owner_ids = [328277117]

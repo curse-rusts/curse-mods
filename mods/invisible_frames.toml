@@ -3,7 +3,7 @@ kind = "native-mod"
 name = "Invisible Frames"
 summary = "Sneak-right-click a filled frame to hide and lock it, or restore it."
 description = """
-Hide the frame of a filled item frame, so only the item shows, as a native mod for Horizon.
+Hide the frame of a filled item frame, so only the item shows, as a native mod for Curse.
 
 - **Sneak and right-click** a filled item frame or glow item frame: its frame disappears and it is locked, so ordinary
   right-clicks no longer turn or take the item.

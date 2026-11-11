@@ -10,13 +10,13 @@ Your block position and the direction you face in the top-left corner of the scr
 
 It reads the player's position, draws on the HUD and writes to chat: nothing else.
 
-Now a native mod (2.0.0): built into the game by the launcher, on the Horizon you play, like any native mod
+Now a native mod (2.0.0): built into the game by the launcher, on the Curse you play, like any native mod
 (install it on the launcher's Mods page, then press Build there). The time of
-day line is gone, since Horizon's hook points don't give the game's clock yet. Turn it off in Options > Mods: it
+day line is gone, since Curse's hook points don't give the game's clock yet. Turn it off in Options > Mods: it
 rests at once, and the next build leaves it out. Its source is
-[horizon-mods/native/coords-hud](https://github.com/horizon-rust/horizon-mods/tree/main/native/coords-hud).
+[curse-mods/native/coords-hud](https://github.com/curse-rusts/curse-mods/tree/main/native/coords-hud).
 """
-authors = ["Horizon"]
+authors = ["Curse"]
 owners = ["ludovic111"]
 owner_ids = [136255825]
 license = "MIT"
@@ -31,7 +31,7 @@ published = "2026-10-29"
 game = "26.3"
 file = "coords_hud-2.0.0.hnmod"
 sha256 = "432376fad3062b3517e274d3b8c0d0b52fc5d6de2aee20a0b340c8cab5a8cf08"
-changelog = "Native: built into the game by the launcher on Horizon's native hook points; /coords is kept; turn it off in Options > Mods. The time of day line is gone for now."
+changelog = "Native: built into the game by the launcher on Curse's native hook points; /coords is kept; turn it off in Options > Mods. The time of day line is gone for now."
 
 [[versions]]
 version = "0.1.0"

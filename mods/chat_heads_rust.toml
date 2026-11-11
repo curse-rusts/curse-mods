@@ -1,6 +1,6 @@
 id = "chat_heads_rust"
 kind = "native-mod"
-name = "Chat Heads Horizon"
+name = "Chat Heads Curse"
 summary = "Chat Heads displays player heads in the chat before the players name making it easier to see who is writing"
 description = "Chat Heads displays player heads in the chat before the players name making it easier to see who is writing. with options being to turn off your own head display "
 authors = ["Demerobit"]

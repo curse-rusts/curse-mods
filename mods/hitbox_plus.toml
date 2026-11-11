@@ -3,7 +3,7 @@ kind = "native-mod"
 name = "Hitbox+"
 summary = "Customizable entity hitboxes with exact weapon & spear in-reach colors, thickness, eye rays, and sprint HUD."
 description = """
-Hitbox+ turns the game's F3+B debug hitboxes into a customizable PvP aid, as a native mod for Horizon.
+Hitbox+ turns the game's F3+B debug hitboxes into a customizable PvP aid, as a native mod for Curse.
 
 - **In-reach colour**: a hitbox takes your chosen colour while your crosshair is on it within hitting distance:
   3 blocks for swords, axes, maces and fists, 4.5 blocks for spears in survival (6.5 in creative).

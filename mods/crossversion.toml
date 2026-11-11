@@ -3,12 +3,12 @@ kind = "native-mod"
 name = "Cross Version"
 summary = "Allows version hopping offline."
 description = """
-Join servers that speak an older Minecraft protocol from Horizon (which speaks only 26.3's), as a native
+Join servers that speak an older Minecraft protocol from Curse (which speaks only 26.3's), as a native
 mod.
 
 When you join, it asks the server which version it speaks. If it isn't 26.3, it starts a
 [ViaProxy](https://github.com/ViaVersion/ViaProxy) on a loopback port and sends the join through it: the proxy speaks
-26.3 to Horizon and the server's own version to the server. A join to a 26.3 server starts nothing.
+26.3 to Curse and the server's own version to the server. A join to a 26.3 server starts nothing.
 
 - **Offline-mode servers only**: online-mode servers can't be joined.
 - The server list shows such servers as joinable, with their own version, instead of "Incompatible version!".

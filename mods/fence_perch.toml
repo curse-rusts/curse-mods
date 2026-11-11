@@ -19,7 +19,7 @@ Supported: vanilla blocks whose IDs end in `_fence`, `_wall` or `_fence_gate` (g
 The host's server checks movement with the same barrier shape, so the mod works in single-player and on LAN games hosted with it. Every player needs the mod. Joining a world or server without it, and dedicated servers, are not supported.
 
 ### Compatibility
-For Minecraft 26.3. Each version is built and gameplay-tested on one exact Horizon Nightly; the launcher warns when a newer Nightly breaks it. Tested revisions and results: [Validation](https://github.com/AyanoKaito/horizon-fence-perch/blob/main/VALIDATION.md).
+For Minecraft 26.3. Each version is built and gameplay-tested on one exact Curse Nightly; the launcher warns when a newer Nightly breaks it. Tested revisions and results: [Validation](https://github.com/AyanoKaito/horizon-fence-perch/blob/main/VALIDATION.md).
 
 This is a native mod: install only if you trust its source and accept the launcher's native-code warning.
 
@@ -46,4 +46,4 @@ untrusted comment: signature from minisign secret key\r
 RURDywNNoT8kYXpKpAW2Z1OqjhzjeeQdumfawuATsoZhnSmy7t+fj6dPctGjKJTVceWErAl04EROFEfs4tPXCru5Vf5yeSVNhQM=\r
 trusted comment: timestamp:1794082945\tfile:fence_perch-1.0.0.hnmod\thashed\r
 8TqlDYaVeuv9xtRP23pHlAJF/bnoSAy1fqGwAy9EZU4Rf9axDT2t/qjIEj+ZVfPjNWtHh9OL4QaOdo59t53BDw=="""
-changelog = "First public release: jump onto fences, walls and closed fence gates from a standstill, stand on top and step off. Player-only collision; animals and jump strength unchanged. Validated in single-player and for LAN host and guest on Horizon Nightly 2026-11-07 (2ebf00a)."
+changelog = "First public release: jump onto fences, walls and closed fence gates from a standstill, stand on top and step off. Player-only collision; animals and jump strength unchanged. Validated in single-player and for LAN host and guest on Curse Nightly 2026-11-07 (2ebf00a)."

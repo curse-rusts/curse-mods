@@ -1,7 +1,7 @@
 id = "resourcify"
 kind = "native-mod"
-name = "ResourcifyHorizon"
-summary = "Resourcify for Horizon"
+name = "ResourcifyCurse"
+summary = "Resourcify for Curse"
 description = """
 Find and install resource packs from Modrinth without leaving the game. By tariksabanuz.
 
@@ -30,7 +30,7 @@ game = "26.3"
 file = "resourcify-0.1.2.hnmod"
 sha256 = "3afe8dd3d2ada0cfd1932e1675283f68ee202152c26281aac1e8787b3707aad9"
 changelog = """
-- "By tariksabanuz" in the mod list description. Rebuilt for the latest Horizon nightly (fdc87ae, Nov 8)."""
+- "By tariksabanuz" in the mod list description. Rebuilt for the latest Curse nightly (fdc87ae, Nov 8)."""
 
 [[versions]]
 version = "0.1.1"
@@ -40,7 +40,7 @@ file = "resourcify-0.1.1.hnmod"
 sha256 = "a6611819c9401dc7370dece7453cdda2356747f2a34c32940bf82ccd6abdcf53"
 changelog = """
 - Version 0.1.1.
-- Rebuilt and re-checked against the current Horizon revision."""
+- Rebuilt and re-checked against the current Curse revision."""
 
 [[versions]]
 version = "0.1.0"

@@ -1,9 +1,9 @@
 id = "connected_textures"
 kind = "native-mod"
-name = "ContinuityHorizon"
-summary = "Continuity for Horizon"
+name = "ContinuityCurse"
+summary = "Continuity for Curse"
 description = """
-Continuity-style connected textures for Horizon, as a native mod: blocks of the same kind join up into one
+Continuity-style connected textures for Curse, as a native mod: blocks of the same kind join up into one
 surface instead of showing a border on every block. It works with the game's own textures; no resource pack needed.
 
 - **Glass and stained glass** (all 16 colours and tinted glass): the frame between two blocks of the same glass goes
@@ -14,7 +14,7 @@ surface instead of showing a border on every block. It works with the game's own
 
 Options > Mods > Connected Textures turns it on and off, and each part on its own; the world is redrawn at once.
 
-Inspired by Continuity (MIT), recreated for Horizon."""
+Inspired by Continuity (MIT), recreated for Curse."""
 authors = ["tariksabanuz"]
 owners = ["tariksabanuz"]
 owner_ids = [332662152]
@@ -31,7 +31,7 @@ game = "26.3"
 file = "connected_textures-0.1.7.hnmod"
 sha256 = "47fd568c4e2969122da80550efd9305b527484168541a6bbea44e1fdff16cab1"
 changelog = """
-- Fixes a crash while meshing when a resource pack model uses only a narrow part of its sprite (the seam inset is now capped at half of each piece). Rebuilt for the latest Horizon nightly (fdc87ae, Nov 8)."""
+- Fixes a crash while meshing when a resource pack model uses only a narrow part of its sprite (the seam inset is now capped at half of each piece). Rebuilt for the latest Curse nightly (fdc87ae, Nov 8)."""
 
 [[versions]]
 version = "0.1.2"

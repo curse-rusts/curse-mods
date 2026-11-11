@@ -3,7 +3,7 @@ kind = "native-mod"
 name = "AppleSkin"
 summary = "Shows how much HP, hunger, and saturation will be restored."
 description = """
-A port of [AppleSkin](https://github.com/squeek502/AppleSkin) by squeek502 for Horizon, as a native mod. It
+A port of [AppleSkin](https://github.com/squeek502/AppleSkin) by squeek502 for Curse, as a native mod. It
 draws the hunger details AppleSkin shows over the food bar:
 
 - **Saturation**: how much saturation you have, as food icons over the food bar.
@@ -35,7 +35,7 @@ untrusted comment: signature from minisign secret key
 RUT6eNq4e5WfVGmizdOQdqc3jXpjW/MxBBP/JE8iFYmkrE0cKbEOUP5t11senfkM2hkDW2JLSOEJCfQJT7PMS/LnYbXET1ux0Ag=
 trusted comment: timestamp:1793891067\tfile:appleskin-0.1.3.hnmod\thashed
 r7jcpfe0pAz6c2FZAuAd6EUJojhQ56mGoq/H9hYXyC8rZ6QuwErQt/nEM4ly1VjMIKS7pbn6vCz0wK7jIak+DQ=="""
-changelog = "Fix for https://github.com/horizon-rust/horizon-mods/issues/289"
+changelog = "Fix for https://github.com/curse-rusts/curse-mods/issues/289"
 
 [[versions]]
 version = "0.1.2"
@@ -76,4 +76,4 @@ untrusted comment: signature from minisign secret key
 RUT6eNq4e5WfVEMHvcSGm73mmamWosNGGcdt7Qn05wqgRuAlDj/DyzH66lS2u8nvB43GnZJ7xCmgoM5xArHJuN9kD30iIKj0zws=
 trusted comment: timestamp:1793368049\tfile:appleskin-1.0.0.hnmod\thashed
 gjEf247x8XwHpOI2Ra3ngk6umC/mFZiHOCfZyzxg5IFJ7CNJVpofnw/l7ITtePPeyi4r3+0D6FvmmhtuiqVAAg=="""
-changelog = "First release. AppleSkin for Horizon as a native mod: saturation, exhaustion and the food in your hand, drawn over the food bar."
+changelog = "First release. AppleSkin for Curse as a native mod: saturation, exhaustion and the food in your hand, drawn over the food bar."

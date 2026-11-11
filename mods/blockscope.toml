@@ -3,7 +3,7 @@ kind = "native-mod"
 name = "Blockscope"
 summary = "The block under your crosshair: its name, id, distance and icon, plus hardness, states and a container's slots."
 description = """
-A Jade-style tooltip for Horizon: the block under your crosshair, in a small box you can place where you
+A Jade-style tooltip for Curse: the block under your crosshair, in a small box you can place where you
 want.
 
 - Its name in your language, its block id and its distance, with its icon.
@@ -28,7 +28,7 @@ published = "2026-11-02"
 game = "26.3"
 file = "blockscope-0.3.1.hnmod"
 sha256 = "4fea94e5337aa82df3d981fc6231fecc80161262add577b596bb6661e0e303d1"
-changelog = "Rebuilt on the 2026-11-01 Nightly (Horizon `4aa6854`). All five hook points are named now — `mods`, `settings`, `settings_click`, `hud`, `tick` — so the bundle still applies when the game moves them."
+changelog = "Rebuilt on the 2026-11-01 Nightly (Curse `4aa6854`). All five hook points are named now — `mods`, `settings`, `settings_click`, `hud`, `tick` — so the bundle still applies when the game moves them."
 
 [[versions]]
 version = "0.3.0"

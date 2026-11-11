@@ -42,3 +42,7 @@ The proof needs resources prepared from your own Minecraft 26.3 (`horizon-prepar
 It seeds an earlier version's settings (bottom right, lows on) in a temporary game folder, then checks that Options > Mods shows them, and that the Corner button moves the box to the top left and writes the same file. CI runs `cargo test`, packages the `.hnmod` and checks the game on the tested commit, and every Monday on the newest Nightly.
 
 License: MIT.
+
+`horizon-client`, `horizon-ctl`, `horizon-prepare`, `horizon-mods/`, `.horizon-mod-data` and `horizon-mods.txt`
+are the public mirror's names, which `native/tools/native.py` fetches and builds; the product is Curse, with
+`curse-client`, `curse-mods/` and `.curse-mod-data`.

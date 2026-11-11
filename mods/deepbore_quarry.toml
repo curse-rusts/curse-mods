@@ -3,7 +3,7 @@ kind = "mod"
 name = "Deepbore Quarry (assets)"
 summary = "The textures, text and recipes of Deepbore Quarry. Needs the Deepbore Quarry native mod."
 description = """
-**This is one of the two parts of [Deepbore Quarry](https://playhorizon.dev/mods/deepbore_quarry_native), and does nothing alone.** Install both: this one, the assets, and the native part. If one is missing, the game says so in chat.
+**This is one of the two parts of [Deepbore Quarry](https://github.com/curse-rusts/curse-mods/blob/main/mods/deepbore_quarry_native.toml), and does nothing alone.** Install both: this one, the assets, and the native part. If one is missing, the game says so in chat.
 
 It holds the mod's models and textures, its English and Russian text, its recipes and drops, and its screen's menu. It has no code. The code, and the description of what the mod does, are in Deepbore Quarry.
 

@@ -1,6 +1,6 @@
 id = "voicechat"
 kind = "native-mod"
-name = "Horizon Voice Chat"
+name = "Curse Voice Chat"
 summary = "Talk with Simple Voice Chat players: proximity voice, groups, push to talk and a menu (V)."
 description = """
 An unofficial client for the [Simple Voice Chat](https://github.com/henkelmax/simple-voice-chat) protocol. On a server with the Simple Voice Chat mod or plugin, you can talk with players who use the Java mod on the regular launcher.
@@ -10,15 +10,15 @@ An unofficial client for the [Simple Voice Chat](https://github.com/henkelmax/si
 - **Menu (V):** connection status, microphone and voice chat on/off, push to talk or voice activation, voice volume, microphone gain and activation level with a live meter, and every hotkey as it is bound now. The right side lists the server's groups with their members: join (with a password if needed), leave, or create a group.
 - **Talking:** hold Caps Lock (push to talk) or use voice activation. Voices come from where players stand, getting quieter with distance and panned left or right.
 - **Groups:** each player's group shows above their head. `/vc join <group> [password]`, `/vc leave`, `/vc create <name> [password] [normal|open|isolated]` and `/vc groups` work too.
-- **Keys** (Options > Mods > Horizon Voice Chat): menu (V), push to talk (Caps Lock), whisper (unbound), mute (J), voice chat off/on (K).
+- **Keys** (Options > Mods > Curse Voice Chat): menu (V), push to talk (Caps Lock), whisper (unbound), mute (J), voice chat off/on (K).
 - **Protocols:** Simple Voice Chat 2.6.x (compatibility 20) and 2.7 (21).
 
 ## What it touches
 
-- It reads the server's `voicechat:*` custom payloads and other players' positions inside `game::remote`, so it is pinned to Horizon `c9d474d`.
+- It reads the server's `voicechat:*` custom payloads and other players' positions inside `game::remote`, so it is pinned to Curse `c9d474d`.
 - It opens one UDP connection to the server's voice chat port, encrypted with AES-128-GCM using the secret the server sends.
 - It uses the default microphone and speakers through cpal, and loads the system **libopus** at run time (the `opus` package must be installed).
-- It keeps its settings in Horizon's own mod settings. It contacts no host other than the Minecraft server you are on (and DNS, for the server's SRV record).
+- It keeps its settings in Curse's own mod settings. It contacts no host other than the Minecraft server you are on (and DNS, for the server's SRV record).
 
 ## Not affiliated
 

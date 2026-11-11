@@ -50,3 +50,7 @@ shows the mod, its keys and the setting, then opens the inventory: the panel sho
 mode gives it, and with the setting turned off the same click opens its recipe page.
 
 License: MIT.
+
+`horizon-client`, `horizon-ctl`, `horizon-prepare`, `horizon-mods/`, `.horizon-mod-data` and `horizon-mods.txt`
+are the public mirror's names, which `native/tools/native.py` fetches and builds; the product is Curse, with
+`curse-client`, `curse-mods/` and `.curse-mod-data`.
